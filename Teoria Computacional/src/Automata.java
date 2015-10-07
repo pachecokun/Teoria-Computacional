@@ -11,6 +11,7 @@ import javax.swing.JPanel;
 
 //Comentario salvaje aparecio
 //Comentario salvaje aparecio
+//ola k ase
 
 public abstract class Automata {
 	/*int estado = 0;
