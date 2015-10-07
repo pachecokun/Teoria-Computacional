@@ -10,6 +10,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 //Comentario salvaje aparecio
+//Comentario salvaje aparecio
 
 public abstract class Automata {
 	/*int estado = 0;
