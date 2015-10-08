@@ -1,6 +1,9 @@
+import java.awt.BasicStroke;
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.RenderingHints;
 import java.awt.geom.AffineTransform;
 import java.awt.geom.QuadCurve2D;
 import java.util.ArrayList;
@@ -29,6 +32,8 @@ public abstract class Automata {
 	ArrayList<Nodo> nodos = new ArrayList<>();
 	JFrame frame;
 	JPanel p;
+	String palabra="";
+	
 	
 	public Automata(Nodo q0){
 		nodos.add(q0);
@@ -53,6 +58,7 @@ public abstract class Automata {
 	
 	public void reset(){
 		estado = q0;
+		palabra="";
 	}
 	
 	public boolean isFinalizado(){
@@ -64,7 +70,9 @@ public abstract class Automata {
 		return false;
 	}
 	
-	public void procesar(char c){
+	public Condicion procesar(char c){
+		Condicion cn = null;
+		palabra+=c;
 		try{
 			boolean encontrado = false;
 			System.out.print(c+":"+estado.estado+"->");
@@ -72,6 +80,7 @@ public abstract class Automata {
 				Nodo n = con.procesar(estado, c);
 				if(n!=null){
 					encontrado = true;
+					cn = con;
 					estado = n;
 					break;
 				}
@@ -83,6 +92,7 @@ public abstract class Automata {
 			e.printStackTrace();
 		}
 		System.out.println(estado==null?-1:estado.estado);
+		return cn;
 	}
 	
 	public void procesar(char c, boolean draw){
@@ -91,6 +101,8 @@ public abstract class Automata {
 			frame = new JFrame();
 			p = new JPanel(){
 				public void paint(Graphics g){
+					g.clearRect(0, 0, getWidth(), getHeight());
+					g.drawString(palabra, 50, 50);
 					for(Condicion con:condiciones){
 						con.draw(g);
 					}
@@ -115,7 +127,20 @@ public abstract class Automata {
 			}
 			estado.setActual(false);
 		}
-		procesar(c);
+		Condicion con = procesar(c);
+		System.out.println(con);
+		if(con!=null){
+			con.setActual(true);
+			p.repaint();
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			con.setActual(false);
+			p.repaint();
+		}
 		if(estado!=null){
 			estado.setActual(true);
 			p.repaint();
@@ -129,6 +154,7 @@ public abstract class Automata {
 		Nodo n1;
 		Nodo n2;
 		int radio;
+		boolean actual;
 				
 		public Condicion(String s, Nodo n1, Nodo n2,int radio) {
 			super();
@@ -136,6 +162,10 @@ public abstract class Automata {
 			this.n1 = n1;
 			this.n2 = n2;
 			this.radio = radio;
+		}
+		
+		public void setActual(boolean actual) {
+			this.actual = actual;
 		}
 
 		public Nodo procesar(Nodo estado,char c){
@@ -149,6 +179,14 @@ public abstract class Automata {
 		
 		public void draw(Graphics gr){
 			Graphics2D g = (Graphics2D)gr;
+			if(actual){
+				g.setStroke(new BasicStroke(2f));
+				g.setColor(Color.BLUE);
+			}
+			else{
+				g.setColor(Color.black);
+				g.setStroke(new BasicStroke(1f));
+			}
 			if(n1==n2){
 				g.drawArc(n1.x-40, n1.y-40, 40, 40, 0, 360);
 			}
@@ -156,15 +194,20 @@ public abstract class Automata {
 				g.drawLine(n1.x, n1.y, n2.x, n2.y);
 			}
 			else{
-				g.draw(new QuadCurve2D.Float(n1.x, n1.y, (n1.x+n2.x)/2,(n1.y+n2.y)/2-radio, n2.x, n2.y));
-
-				Graphics2D g2d = (Graphics2D)g;
-				AffineTransform original = g.getTransform();
-				//g.translate(n2.x, n2.y);
-				//g.rotate(-Math.atan(radio/(n1.x+n2.x)/2));
-				g.fillOval(-25, -5, 10, 10);
-				g.transform(original);
+				if(Math.abs(n1.x-n2.x)>Math.abs(n1.y-n2.y)){
+					g.draw(new QuadCurve2D.Float(n1.x, n1.y, (n1.x+n2.x)/2,(n1.y+n2.y)/2-radio, n2.x, n2.y));
+				}
+				else{
+					g.draw(new QuadCurve2D.Float(n1.x, n1.y, (n1.x+n2.x)/2-radio,(n1.y+n2.y)/2, n2.x, n2.y));
+				}
 			}
+			AffineTransform original = g.getTransform();
+			g.translate(n2.x, n2.y);
+			g.rotate(Math.atan((n1.y-n2.y)/(n2.x-n2.x)));
+			g.fillOval(-25, -5, 10, 10);
+			g.setTransform(original);
+			g.setColor(Color.black);
+			g.setStroke(new BasicStroke(1f));
 		}
 		
 	}
@@ -195,7 +238,7 @@ public abstract class Automata {
 		}
 		public void paint(Graphics g){
 			if(actual)
-				g.setColor(Color.green);
+				g.setColor(Color.BLUE);
 			else
 				g.setColor(Color.white);
 			g.fillOval(x-20, y-20, 40, 40);

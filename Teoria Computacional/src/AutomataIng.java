@@ -11,14 +11,13 @@ import javax.swing.JPanel;
 public class AutomataIng extends Automata{
 
 	public AutomataIng(){
-		//super(estados,transiciones,finales);
 		super(new Nodo(50,300,0));
 		addNodo(new Nodo(150,300,1));
 		addNodo(new Nodo(250,300,2));
 		addNodo(new Nodo(350,300,3));
 		addCondicion("[a-zA-Z&&[^iI]]", 0,0);
-		addCondicion("[a-zA-Z&&[^iInN]]", 1,0,50);
-		addCondicion("[a-zA-Z&&[^iIgG]]", 2,0,60);
+		addCondicion("[a-zA-Z&&[^iInN]]", 1,0,-20);
+		addCondicion("[a-zA-Z&&[^iIgG]]", 2,0,-80);
 		addCondicion("[a-zA-Z&&[^iI]]", 3,0,150);
 		addCondicion("[iI]", 0,1);
 		addCondicion("[nN]", 1,2);
