@@ -43,7 +43,7 @@ public class Primos {
 		f.setSize(300, 300);
 		f.setResizable(false);
 		f.setLayout(null);
-		f.setDefaultCloseOperation(f.EXIT_ON_CLOSE);
+		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		
 		JPanel p = new JPanel(){

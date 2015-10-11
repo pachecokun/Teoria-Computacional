@@ -1,10 +1,3 @@
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-
 public class AutomataParidad  extends Automata{
 	public AutomataParidad(){
 		super(new Nodo(150,150,0),-120);
@@ -30,7 +23,6 @@ public class AutomataParidad  extends Automata{
 
 		int l = 1;
 		int posicion = 1;
-		int procesados = 0; 
 		String palabra ="";
 		if(e.modo==1){
 			a.initUI(500, 500);

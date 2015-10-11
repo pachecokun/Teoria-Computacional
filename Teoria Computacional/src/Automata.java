@@ -3,12 +3,9 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.awt.RenderingHints;
 import java.awt.geom.AffineTransform;
 import java.awt.geom.QuadCurve2D;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.regex.Pattern;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -121,6 +118,7 @@ public abstract class Automata {
 	public void initUI(int w,int h){
 		frame = new JFrame();
 		p = new JPanel(){
+
 			public void paint(Graphics g){
 				g.clearRect(0, 0, getWidth(), getHeight());
 				Font f = g.getFont();
@@ -141,14 +139,14 @@ public abstract class Automata {
 			}
 		};
 		frame.setSize(500, 500);
-		frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.add(p);
 		frame.setSize(w,h);
 		frame.setLocationRelativeTo(null);
 		frame.setResizable(false);
 		frame.setVisible(true);
-		frame.setState(frame.ICONIFIED);
-		frame.setState(frame.NORMAL);
+		frame.setState(JFrame.ICONIFIED);
+		frame.setState(JFrame.NORMAL);
 	}
 	
 	public void finalizar(){

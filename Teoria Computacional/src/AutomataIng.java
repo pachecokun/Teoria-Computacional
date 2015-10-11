@@ -1,18 +1,3 @@
-import java.awt.Color;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.geom.CubicCurve2D;
-import java.awt.geom.QuadCurve2D;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-
 public class AutomataIng extends Automata{
 
 	public AutomataIng(){
@@ -40,7 +25,6 @@ public class AutomataIng extends Automata{
 		
 		int l = 1;
 		int posicion = 1;
-		int procesados = 0; 
 		String palabra ="";
 		if(e.modo==1){
 			a.initUI(700, 400);
