@@ -29,6 +29,7 @@ public abstract class Automata {
 	ArrayList<Condicion>condiciones = new ArrayList<>();
 	ArrayList<Nodo> finales = new ArrayList<>();
 	boolean finalizado = false;
+	boolean fin = false;
 	ArrayList<Nodo> nodos = new ArrayList<>();
 	JFrame frame;
 	JPanel p;
@@ -50,24 +51,24 @@ public abstract class Automata {
 	}
 	
 	public void addCondicion(String s, int n1, int n2){
-		condiciones.add(new Condicion(s, nodos.get(n1), nodos.get(n2),0));
+		condiciones.add(new Condicion(s, nodos.get(n1), nodos.get(n2),0,0));
 	}
-	public void addCondicion(String s, int n1, int n2,int h){
-		condiciones.add(new Condicion(s, nodos.get(n1), nodos.get(n2),h));
+	public void addCondicion(String s, int n1, int n2,int h,int a){
+		condiciones.add(new Condicion(s, nodos.get(n1), nodos.get(n2),h,a));
 	}
 	
 	public void reset(){
+		estado.setActual(false);
 		estado = q0;
 		palabra="";
+		fin = false;
+		if(p!=null){
+			p.repaint();
+		}
 	}
 	
 	public boolean isFinalizado(){
-		for(Nodo i:finales){
-			if(estado==i){
-				return true;
-			}
-		}
-		return false;
+		return estado!=null&&estado.isFin();
 	}
 	
 	public Condicion procesar(char c){
@@ -75,7 +76,6 @@ public abstract class Automata {
 		palabra+=c;
 		try{
 			boolean encontrado = false;
-			System.out.print(c+":"+estado.estado+"->");
 			for(Condicion con:condiciones){
 				Nodo n = con.procesar(estado, c);
 				if(n!=null){
@@ -91,18 +91,25 @@ public abstract class Automata {
 		}catch(Exception e){
 			e.printStackTrace();
 		}
-		System.out.println(estado==null?-1:estado.estado);
 		return cn;
 	}
 	
-	public void procesar(char c, boolean draw){
+	public void procesar(char c, int w, int h){
 		
 		if(frame == null){
 			frame = new JFrame();
 			p = new JPanel(){
 				public void paint(Graphics g){
 					g.clearRect(0, 0, getWidth(), getHeight());
-					g.drawString(palabra, 50, 50);
+					Font f = g.getFont();
+					if(fin)
+						if(estado!=null&&estado.isFin())
+							g.setColor(Color.green);
+						else
+							g.setColor(Color.red);
+					g.setFont(new Font("Arial",Font.BOLD,50));
+					g.drawString(palabra, 20, 50);
+					g.setFont(f);
 					for(Condicion con:condiciones){
 						con.draw(g);
 					}
@@ -114,13 +121,14 @@ public abstract class Automata {
 			frame.setSize(500, 500);
 			frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
 			frame.add(p);
+			frame.setSize(w,h);
 			frame.setVisible(true);
 		}
 		if(estado!=null){
 			estado.setActual(true);
 			p.repaint();
 			try {
-				Thread.sleep(1000);
+				Thread.sleep(500);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -128,12 +136,11 @@ public abstract class Automata {
 			estado.setActual(false);
 		}
 		Condicion con = procesar(c);
-		System.out.println(con);
 		if(con!=null){
 			con.setActual(true);
 			p.repaint();
 			try {
-				Thread.sleep(1000);
+				Thread.sleep(500);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -148,20 +155,34 @@ public abstract class Automata {
 		
 	}
 	
+	public void finalizar(){
+		fin = true;
+		if(p!=null){
+			p.repaint();
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
 	
 	public static class Condicion{
 		Pattern patron;
 		Nodo n1;
 		Nodo n2;
 		int radio;
+		int angulo;
 		boolean actual;
 				
-		public Condicion(String s, Nodo n1, Nodo n2,int radio) {
+		public Condicion(String s, Nodo n1, Nodo n2,int radio,int angulo) {
 			super();
 			this.patron = Pattern.compile(s);
 			this.n1 = n1;
 			this.n2 = n2;
 			this.radio = radio;
+			this.angulo = angulo;
 		}
 		
 		public void setActual(boolean actual) {
@@ -189,25 +210,36 @@ public abstract class Automata {
 			}
 			if(n1==n2){
 				g.drawArc(n1.x-40, n1.y-40, 40, 40, 0, 360);
+				g.drawString(patron.pattern(), n1.x-50, n2.y-40);
 			}
 			else if(radio==0){
 				g.drawLine(n1.x, n1.y, n2.x, n2.y);
+				if(Math.abs(n1.x-n2.x)>Math.abs(n1.y-n2.y))
+					g.drawString(patron.pattern(), (n1.x+n2.x)/2, (n1.y+n2.y)/2-10);
+				else
+					g.drawString(patron.pattern(), (n1.x+n2.x)/2+20, (n1.y+n2.y)/2);
 			}
 			else{
 				if(Math.abs(n1.x-n2.x)>Math.abs(n1.y-n2.y)){
 					g.draw(new QuadCurve2D.Float(n1.x, n1.y, (n1.x+n2.x)/2,(n1.y+n2.y)/2-radio, n2.x, n2.y));
+					g.drawString(patron.pattern(), (n1.x+n2.x)/2,(n1.y+n2.y)/2-(int)(radio*0.65));
 				}
 				else{
 					g.draw(new QuadCurve2D.Float(n1.x, n1.y, (n1.x+n2.x)/2-radio,(n1.y+n2.y)/2, n2.x, n2.y));
+					g.drawString(patron.pattern(), (n1.x+n2.x)/2-(int)(radio*0.7),(n1.y+n2.y)/2);
 				}
 			}
 			AffineTransform original = g.getTransform();
 			g.translate(n2.x, n2.y);
-			g.rotate(Math.atan((n1.y-n2.y)/(n2.x-n2.x)));
-			g.fillOval(-25, -5, 10, 10);
+			g.rotate(Math.toRadians(angulo));
+			int pxs []= {20,30,30}; 
+			int pys []= {0,10,-10}; 
+			g.fillPolygon(pxs,pys,3);
+			//g.fillOval(15, -5, 10, 10);
 			g.setTransform(original);
 			g.setColor(Color.black);
 			g.setStroke(new BasicStroke(1f));
+			
 		}
 		
 	}
@@ -216,6 +248,10 @@ public abstract class Automata {
 		int x,y,estado;
 		boolean fin;
 		boolean actual;
+		
+		public boolean isFin() {
+			return fin;
+		}
 		
 		public Nodo(int estado) {
 			super();
