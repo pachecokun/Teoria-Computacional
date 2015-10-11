@@ -7,23 +7,13 @@ import java.awt.RenderingHints;
 import java.awt.geom.AffineTransform;
 import java.awt.geom.QuadCurve2D;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.regex.Pattern;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-//Comentario salvaje aparecio
-//Comentario salvaje aparecio
-//ola k ase
-
 public abstract class Automata {
-	/*int estado = 0;
-	Transicion[]transiciones;
-	int[] finales;
-	boolean finalizado = false;
-	int[] estados;
-	int posiciones[][];
-	*/
 	Nodo q0;
 	Nodo estado =null;
 	ArrayList<Condicion>condiciones = new ArrayList<>();
@@ -36,9 +26,10 @@ public abstract class Automata {
 	String palabra="";
 	
 	
-	public Automata(Nodo q0){
+	public Automata(Nodo q0,int angulo){
 		nodos.add(q0);
 		this.q0=q0;
+		q0.setInicial(true, angulo);
 		this.estado = q0;
 	}
 
@@ -72,8 +63,9 @@ public abstract class Automata {
 		return estado!=null&&estado.isFin();
 	}
 	
-	public Condicion procesar(char c){
+	public Nodo procesar(char c){
 		Condicion cn = null;
+		Nodo e0 = estado;
 		palabra+=c;
 		try{
 			boolean encontrado = false;
@@ -92,7 +84,38 @@ public abstract class Automata {
 		}catch(Exception e){
 			e.printStackTrace();
 		}
-		return cn;
+		
+		if(frame!=null){
+			if(estado!=null){
+				e0.setActual(true);
+				p.repaint();
+				try {
+					Thread.sleep(500);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				e0.setActual(false);
+			}
+			if(cn!=null){
+				cn.setActual(true);
+				p.repaint();
+				try {
+					Thread.sleep(500);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				cn.setActual(false);
+				p.repaint();
+			}
+			if(estado!=null){
+				estado.setActual(true);
+				p.repaint();
+			}
+		}
+		
+		return estado;
 	}
 	
 	public void initUI(int w,int h){
@@ -121,43 +144,11 @@ public abstract class Automata {
 		frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
 		frame.add(p);
 		frame.setSize(w,h);
+		frame.setLocationRelativeTo(null);
+		frame.setResizable(false);
 		frame.setVisible(true);
-	}
-	
-	public void procesar(char c, int w, int h){
-		
-		if(frame == null){
-			initUI(w,h);
-		}
-		if(estado!=null){
-			estado.setActual(true);
-			p.repaint();
-			try {
-				Thread.sleep(500);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			estado.setActual(false);
-		}
-		Condicion con = procesar(c);
-		if(con!=null){
-			con.setActual(true);
-			p.repaint();
-			try {
-				Thread.sleep(500);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			con.setActual(false);
-			p.repaint();
-		}
-		if(estado!=null){
-			estado.setActual(true);
-			p.repaint();
-		}
-		
+		frame.setState(frame.ICONIFIED);
+		frame.setState(frame.NORMAL);
 	}
 	
 	public void finalizar(){
@@ -174,16 +165,34 @@ public abstract class Automata {
 	}
 	
 	public static class Condicion{
-		Pattern patron;
 		Nodo n1;
 		Nodo n2;
 		int radio;
 		int angulo;
 		boolean actual;
-				
+		char permitido;
+		String no_permitidos=null;
+		String desc;
+		
 		public Condicion(String s, Nodo n1, Nodo n2,int radio,int angulo) {
 			super();
-			this.patron = Pattern.compile(s);
+			if(s.startsWith("-")){
+				no_permitidos = s.substring(1);
+				desc = "\u03A3 \\ {";
+				for(int i = 0;i<no_permitidos.length();i++){
+					desc+=no_permitidos.charAt(i);
+					if(i<no_permitidos.length()-1){
+						desc+=",";
+					}
+				}
+				desc+="}";
+			}
+			else{
+				permitido = s.charAt(0);
+				desc =""+permitido;
+			}
+			
+			
 			this.n1 = n1;
 			this.n2 = n2;
 			this.radio = radio;
@@ -195,7 +204,8 @@ public abstract class Automata {
 		}
 
 		public Nodo procesar(Nodo estado,char c){
-			if(estado==n1&&patron.matcher(""+c).matches()){
+			c = Character.toLowerCase(c);
+			if(estado==n1&&((no_permitidos!=null&&no_permitidos.indexOf(c)==-1)||c==permitido)){
 				return n2;
 			}
 			else{
@@ -203,10 +213,14 @@ public abstract class Automata {
 			}
 		}
 		
+		
 		public void draw(Graphics gr){
 			Graphics2D g = (Graphics2D)gr;
+			Font f = g.getFont();
+			Font f2 = new Font(f.getFontName(), Font.BOLD, f.getSize()+7);
 			if(actual){
 				g.setStroke(new BasicStroke(2f));
+				g.setFont(f2);
 				g.setColor(Color.BLUE);
 			}
 			else{
@@ -215,23 +229,23 @@ public abstract class Automata {
 			}
 			if(n1==n2){
 				g.drawArc(n1.x-40, n1.y-40, 40, 40, 0, 360);
-				g.drawString(patron.pattern(), n1.x-50, n2.y-40);
+				g.drawString(desc, n1.x-50, n2.y-40);
 			}
 			else if(radio==0){
 				g.drawLine(n1.x, n1.y, n2.x, n2.y);
 				if(Math.abs(n1.x-n2.x)>Math.abs(n1.y-n2.y))
-					g.drawString(patron.pattern(), (n1.x+n2.x)/2, (n1.y+n2.y)/2-10);
+					g.drawString(desc, (n1.x+n2.x)/2, (n1.y+n2.y)/2-5);
 				else
-					g.drawString(patron.pattern(), (n1.x+n2.x)/2+20, (n1.y+n2.y)/2);
+					g.drawString(desc, (n1.x+n2.x)/2+5, (n1.y+n2.y)/2);
 			}
 			else{
 				if(Math.abs(n1.x-n2.x)>Math.abs(n1.y-n2.y)){
 					g.draw(new QuadCurve2D.Float(n1.x, n1.y, (n1.x+n2.x)/2,(n1.y+n2.y)/2-radio, n2.x, n2.y));
-					g.drawString(patron.pattern(), (n1.x+n2.x)/2,(n1.y+n2.y)/2-(int)(radio*0.65));
+					g.drawString(desc, (n1.x+n2.x)/2,(n1.y+n2.y)/2-(int)(radio*0.60));
 				}
 				else{
 					g.draw(new QuadCurve2D.Float(n1.x, n1.y, (n1.x+n2.x)/2-radio,(n1.y+n2.y)/2, n2.x, n2.y));
-					g.drawString(patron.pattern(), (n1.x+n2.x)/2-(int)(radio*0.7),(n1.y+n2.y)/2);
+					g.drawString(desc, (n1.x+n2.x)/2-(int)(radio*0.6),(n1.y+n2.y)/2);
 				}
 			}
 			AffineTransform original = g.getTransform();
@@ -240,8 +254,8 @@ public abstract class Automata {
 			int pxs []= {20,30,30}; 
 			int pys []= {0,10,-10}; 
 			g.fillPolygon(pxs,pys,3);
-			//g.fillOval(15, -5, 10, 10);
 			g.setTransform(original);
+			g.setFont(f);
 			g.setColor(Color.black);
 			g.setStroke(new BasicStroke(1f));
 			
@@ -253,6 +267,13 @@ public abstract class Automata {
 		int x,y,estado;
 		boolean fin;
 		boolean actual;
+		boolean inicial = false;
+		int ainicial = 0;
+		
+		public void setInicial(boolean inicial,int angulo) {
+			this.inicial = inicial;
+			ainicial = angulo;
+		}
 		
 		public boolean isFin() {
 			return fin;
@@ -277,17 +298,34 @@ public abstract class Automata {
 			this.y = y;
 			this.estado = estado;
 		}
-		public void paint(Graphics g){
+		public void paint(Graphics gr){
+			Graphics2D g = (Graphics2D)gr;
+			
+			if(inicial){
+				AffineTransform original = g.getTransform();
+				g.translate(x, y);
+				g.rotate(Math.toRadians(ainicial));
+				int pxs []= {20,30,30}; 
+				int pys []= {0,10,-10}; 
+				g.drawLine(50, 0, 10, 0);
+				g.fillPolygon(pxs,pys,3);
+				g.setTransform(original);
+			}
+			
 			if(actual)
 				g.setColor(Color.BLUE);
 			else
 				g.setColor(Color.white);
+			
 			g.fillOval(x-20, y-20, 40, 40);
 			g.setColor(Color.black);
+			
 			if(fin)
 				g.drawOval(x-17, y-17, 34, 34);
+			
 			g.drawOval(x-20, y-20, 40, 40);
 			g.drawString("q"+estado, x-8,y);
+
 		}
 	}
 	
