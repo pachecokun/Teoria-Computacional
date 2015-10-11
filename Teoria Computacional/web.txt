@@ -1,0 +1,554 @@
+webay
+ Hide
+ Wiki Loves Monuments: Photograph a monument, help Wikipedia and win!
+Page move-protected
+eBay
+From Wikipedia, the free encyclopedia
+This article is about the internet corporation. For the song by "Weird Al" Yankovic, see eBay (song).
+eBay Inc.
+EBay logo.svg
+Screenshot of eBay homepage.png
+The current eBay logo and homepage
+Type	Public
+Traded as	NASDAQ: EBAY
+NASDAQ-100 Component
+S&P 500 Component
+Founded	September 3, 1995; 20 years ago
+Headquarters	2145 Hamilton Avenue
+San Jose, CA 95125
+United States
+Coordinates	37.295448°N 121.927453°WCoordinates: 37.295448°N 121.927453°W
+Founder(s)	Pierre Omidyar
+Chairman	Thomas J. Tierney
+CEO	Devin Wenig
+Industry	Internet
+Products	eBayClassifieds, electronic commerce, Gumtree, Kijiji, online auction hosting, iBazar, GittiGidiyor
+Services	Online shopping
+Revenue	Increase US$ 17.90 billion (2014)[1]
+Operating income	Increase US$ 3.51 billion (2014)[1]
+Net income	Decrease US$ 46 million (2014)[1]
+Total assets	Increase US$ 45.13 billion (2014)[1]
+Total equity	Decrease US$ 19.90 billion (2014)[1]
+Employees	34,600 (2014)[2]
+Slogan(s)	"World's Online Marketplace."
+"Connecting buyers and sellers globally."
+"Whatever it is, you can get it on eBay."
+"Buy it, sell it, love it"
+"Buy it New, Buy it Now"
+"When it's on your mind, it's on eBay"
+Website	eBay.com
+Written in	Java[3]
+IPv6 support	No
+Alexa rank	Increase 18 (August 2015)[4]
+Type of site	E-commerce
+Registration	Guest checkout available on site, registration required to sell
+Available in	Multilingual
+Native client(s) on	iOS, watchOS, Android, Windows, Windows Phone
+eBay Inc. is an American multinational corporation and e-commerce company, providing consumer to consumer & business to consumer sales services via Internet. It is headquartered in San Jose, California. eBay was founded by Pierre Omidyar in 1995, and became a notable success story of the dot-com bubble. Today, it is a multibillion-dollar business with operations localized in over thirty countries[5]
+
+The company manages eBay.com, an online auction and shopping website in which people and businesses buy and sell a broad variety of goods and services worldwide. In addition to its auction-style sales, the website has since expanded to include "Buy It Now" shopping; shopping by UPC, ISBN, or other kind of SKU (via Half.com); online classified advertisements (via Kijiji or eBay Classifieds); online event ticket trading (via StubHub); online money transfers (via PayPal)[6] and other services.
+
+It is a free website, but charges users an invoice fee when sellers have sold or listed any items.[7]
+
+Contents  [hide] 
+1 History
+1.1 Early years
+1.2 2000s
+2 Corporate affairs
+2.1 Board of directors
+2.2 Logo
+2.3 Profit and transactions
+2.4 Environmental record
+2.5 Acquisitions
+2.5.1 StubHub
+2.5.2 Skype
+2.5.3 Craigslist
+2.5.4 PayPal
+3 Use for data analysis
+3.1 Third party
+3.2 GCHQ
+4 ebay.com
+4.1 Items
+4.1.1 Unusual items
+4.1.2 Prohibited or restricted items
+4.2 Bidding
+4.2.1 Auction-style listings
+4.2.2 Seller ratings
+4.2.3 Charity auctions
+4.3 Shipping
+5 Controversy and criticism
+5.1 2014 security breach
+6 See also
+7 References
+8 External links
+History[edit]
+
+eBay headquarters in San Jose, California
+Early years[edit]
+AuctionWeb was founded in California, on September 4, 1995, by French-born Iranian-American computer programmer Pierre Omidyar (born June 21, 1967) as part of a larger personal site.[8] One of the first items sold on AuctionWeb was a broken laser pointer for $14.83. Astonished, Omidyar contacted the winning bidder to ask if he understood that the laser pointer was broken. In his responding email, the buyer explained: "I'm a collector of broken laser pointers."[9] The frequently repeated story that eBay was founded to help Omidyar's fiancée trade Pez candy dispensers was fabricated by a public relations manager in 1997 to interest the media, which were not interested in the company's previous explanation about wanting to create a "perfect market".[10] This was revealed in Adam Cohen's book, The Perfect Store (2002),[8] and confirmed by eBay.[10]
+
+Reportedly, eBay was simply a side hobby for Omidyar until his Internet service provider informed him he would need to upgrade to a business account due to the high volume of traffic to his website. The resulting price increase (from $30/month to $250) forced him to start charging those who used eBay, and was not met with any animosity.[citation needed] It resulted in the hiring of Chris Agarpao as eBay's first employee to handle the number of checks coming in for fees.[citation needed]
+
+
+Pierre Omidyar, founder and chairman of eBay
+Jeffrey Skoll was hired as the first president of the company in early 1996. In November 1996, eBay entered into its first third-party licensing deal, with a company called Electronic Travel Auction to use SmartMarket Technology to sell plane tickets and other travel products. Growth was phenomenal; in January 1997 the site hosted 2,000,000 auctions, compared with 250,000 during the whole of 1996.[11] The company officially changed the name of its service from AuctionWeb to eBay in September 1997. Originally, the site belonged to Echo Bay Technology Group, Omidyar's consulting firm. Omidyar had tried to register the domain name echobay.com, but found it already taken by the Echo Bay Mines, a gold mining company,[12] so he shortened it to his second choice, eBay.com.[13]
+
+In 1997, the company received $6.7 million in funding from the venture capital firm Benchmark Capital.[14]
+
+Meg Whitman was hired as eBay President and CEO in March 1998. At the time, the company had 30 employees,[15] half a million users and revenues of $4.7 million in the United States.[citation needed]
+
+eBay went public on September 21, 1998,[16] and both Omidyar and Skoll became instant billionaires. eBay's target share price of $18 was all but ignored as the price went to $53.50 on the first day of trading.[17]
+
+2000s[edit]
+As the company expanded product categories beyond collectibles into almost any saleable item, business grew quickly.[9] In February 2002, the company purchased iBazar, a similar European auction web site founded in 1998,[citation needed] and then bought PayPal on October 3, 2002.[18]
+
+By early 2008, the company had expanded worldwide, counted hundreds of millions of registered users, 15,000+ employees and revenues of almost $7.7 billion.[19] After nearly ten years at eBay, Whitman decided to enter politics. On January 23, 2008, the company announced that Whitman would step down on March 31, 2008 and John Donahoe was selected to become President and CEO.[20] Whitman remained on the Board of Directors and continued to advise Donahoe through 2008. In late 2009, eBay completed the sale of Skype for $2.75 billion, but will still own 30% equity in the company.[21]
+
+In 2012 eBay was charged by the United States Department of Justice with entering into non-solicitation agreements with other technology companies involving their highly skilled employees.[22]
+
+It was announced on September 30, 2014, that eBay would spinoff PayPal into a separate publicly traded company, which is taking steps that were first demanded nine months ago by activist hedge fund magnate Carl Icahn. The move will break eBay almost in half, separating it from PayPal, which eBay purchased 12 years ago and built into a giant that generates almost half of the company’s revenue. The spinoff completed on July 18, 2015. eBay’s current chief executive, John Donahoe, will step down from that role.[23][24][25]
+
+Corporate affairs[edit]
+Board of directors[edit]
+As of November 2014, the board of directors was as follows:[26]
+
+Devin Wenig, new eBay CEO and President since 2015
+Fred D. Anderson, former managing director of Elevation Partners, director of eBay since July 2003
+Edward W. Barnholt, former president and CEO of Agilent Technologies, director of eBay since April 2005
+Scott Cook, founder of Intuit, director of eBay since June 1998
+John Donahoe, eBay’s former president and CEO since March 2008, former director of eBay since January 2008
+David Dorman, non-executive chairman of Motorola, director of eBay since June 2014
+William Clay Ford, Jr., executive chairman of Ford Motor Company, director of eBay since July 2005
+Kathleen C. Mitic, founder and CEO of Sitch Inc, director of eBay since September 2011
+David M. Moffett, former CEO of Freddie Mac, director of eBay since July 2007
+Pierre Omidyar, director and chairman of eBay, since its incorporation in May 1996
+Richard T. Schlosberg, former president and CEO of the David and Lucile Packard Foundation, director of eBay since March 2004
+Thomas J. Tierney, co-founder of the Bridgespan Group, director of eBay since March 2003
+Logo[edit]
+In September 2012, eBay introduced their new logo set in Univers.[27] This new logo was installed onto the main website on October 10, 2012.
+
+
+1995–2012
+ 
+
+From 2012–present
+Profit and transactions[edit]
+eBay generates revenue by a complex system of fees for services, listing product features, and a Final Value Fee for sales proceeds by sellers. As of November 2012, the U.S.-based eBay.com charges $0.10 to $2, based on the opening or reserve price, as an insertion fee for a basic auction-style listing without any adornments. The Final Value Fee amounts to 10% of the total amount of the sale, which is the price of the item plus shipping charges.[28] Fixed-price listings have an insertion fee of $0.30, and the final value fee varies based on category and total amount of the sale (e.g., 13% for DVDs & Movies up to $50).[29] The UK based ebay.co.uk[30] takes from £0.15 to a maximum rate of £3 per £100 for an ordinary listing and from 0.75% to 10% (writing as of June 2009) of the final price. Reduced Final Value Fees are available to business registered customers.
+
+Under U.S. law, a state cannot require sellers located outside the state to collect a sales tax, making purchases more attractive to buyers. Although some state laws require resident purchasers to pay use tax on out-of-state purchases, it is not a common practice.[citation needed] However, sellers that operate as a business do follow state tax regulations on eBay transactions.[31][32] However Value Added Tax (VAT), a form of sales tax in EU countries, is different. eBay requires sellers to include the VAT element in their listing price and not as an add-on and thus profits by collecting fees based on what governments tax for VAT; it not only receives fees as a percentage of the sale price "ex VAT" but also the same percentage on the VAT itself.[33] In a similar manner eBay also charges its FVF on the shipping fees charged by the Post Office (USPS) or other third party shippers, even when shipping is a separate charge.
+
+The company's business strategy includes increasing international trade.[34][35] eBay has already expanded to over two dozen countries including China and India. Strategic international expansion has failed in Taiwan and Japan, where Yahoo! had a head start, and New Zealand where Trade Me is the dominant online auction website. eBay also notably failed in China due to competition from local rival Taobao.[36] eBay entered the Chinese market in 2002 and shut down its Chinese site in 2007.[37]
+
+In its Q1 2008 results, total payment volume via PayPal increased 17%, but off the eBay auction site it was up 61%.[38]
+
+For most listing categories, eBay sellers are permitted to offer a variety of payment systems such as Escrow.com,[39] PayPal, Paymate, Propay, and Skrill.[40] Propay and Skrill will be banned effective September 27, 2015, citing low usage.[41]
+
+Escrow.com is eBay's approved escrow site. The transactions processed through Escrow.com largely are in relation to eBay Motors; they are not restricted to this type of listing however.[39]
+
+eBay runs an affiliate program under the name eBay Partner Network.[42] eBay affiliate marketers were originally paid a percentage of the eBay seller's transaction fees, with commissions ranging from 50% to 75% of the fees paid for an item purchased. In October 2009, eBay changed to an affiliate payout system that it calls Quality Click Pricing, in which affiliates are paid an amount determined by an undisclosed algorithm. The total earnings amount is then divided by the number of clicks the affiliate sent to eBay and is reported as Earnings Per Click, or EPC. In October 2013, ePN launched a new pricing model. The new model is more transparent, and is based on category-level base commission rates with bonuses available for referring new and reactivated buyers.[43]
+
+On April 18, 2012 eBay reported a 29% Q1 revenue increase to $3.3 billion compared to their Q1 in 2011. Net income was reported to be at $570 million for the quarter.[44]
+
+Environmental record[edit]
+On May 8, 2008, eBay announced the opening of its newest building on the company's North Campus in San Jose, which is the first structure in the city to be built from the ground up to LEED Gold standards.[45] The building, the first the company had built in its 13-year existence, uses an array of 3,248 solar panels, spanning 60,000 square feet (5,600 m2), and providing 650 kilowatts of power to eBay's campus.[46][47] The array can supply 15%–18% of the company's total energy requirements, reducing the amount of greenhouse gases that would be produced to create that energy by other means.[46] SolarCity, the company responsible for designing the array, estimates that the solar panels installed on eBay's campus will prevent 37 million pounds of carbon dioxide from being released into the environment as a result of replaced power production over the next three decades. Creating an equivalent impact to remove the same amount of carbon dioxide from the atmosphere would require planting 322 acres (1.30 km2) of trees.[47] The design of the building also incorporates other elements to reduce its impact on the environment. The building is equipped with a lighting system that detects natural ambient light sources and automatically dims artificial lighting to save 39% of the power usually required to light an office building. eBay's newest building also reduces demand on local water supplies by incorporating an eco-friendly irrigation system, and low-flow shower heads and faucets. Even during construction, more than 75% of the waste from construction was recycled. eBay also runs buses between San Francisco and the San Jose campus to reduce the number of commuting vehicles.[45] In 2014, eBay and several other Oregon businesses signed the Oregon Business Climate Declaration to promote local job growth and slow carbon pollution.[48]
+
+Acquisitions[edit]
+Main article: List of acquisitions by eBay
+StubHub[edit]
+StubHub was acquired by eBay in January 2007 for a reported $310 million.[49][50][51][52] According to CNN Money, 2007 was a very successful year for the company, handling five million individual transactions, more than in the previous six years combined of its history.[53] Staffing at StubHub had increased to 350 workers by the time of the sale.[52] Eight months after the acquisition, StubHub reached an exclusive agreement with Major League Baseball (MLB).[53] They get a piece of the 25% in commissions StubHub earns on either end of a season tiy in 2007, alleging "intentional interference" with Ticketmaster's contractual rights.[54]
+
+Skype[edit]
+eBay Inc. acquired Skype in 2005[55] and significantly expanded its customer base to more than 480 million registered users worldwide. To focus on its core e-commerce and payments businesses, eBay Inc. sold a majority stake in Skype in November 2009, retaining a minority investment in the company.[56] In May 10, 2011, Microsoft announced that they had acquired Skype for $8.5 billion.[57]
+
+Craigslist[edit]
+In the summer of 2004, eBay acknowledged that it had acquired 25% of classified listings website, Craigslist. Former Craigslist executive Phillip Knowlton was the seller, and he insisted that his former employer was aware of his plans to divest his holdings. Initially, eBay assured Craigslist that they would not ask the company to change the way it does business. eBay spokesman Hani Durzy stated that the "investment was really for learning purposes; it gives us access to learn how the classified market online works".[58]
+
+In March 2005, eBay launched the classifieds service Kijiji. In April 2008, eBay sued Craigslist to "safeguard its four-year financial investment", claiming that in January 2008, Craigslist took actions that "unfairly diluted eBay's economic interest by more than 10%."[59] Craigslist countersued in May 2008 "to remedy the substantial and ongoing harm to fair competition" that Craigslist claims is constituted by eBay's actions as a Craigslist shareholder.[60] In September 2010, Delaware Judge William Chandler ruled that the actions of Craigslist were unlawful, and that the actions taken by Craigslist founders Jim Buckmaster and Craig Newmark had "breached their fiduciary duty of loyalty", and restored eBay's stake in the company to 28.4% from a diluted level of 24.85%.[61] However, the judge dismissed eBay's objection to a staggered board provision citing that Craigslist has the right to protect its own trade secrets.[62][63] eBay spokesman Michael Jacobson stated "We are very pleased that the court gave eBay what it sought from the lawsuit".[61]
+
+PayPal[edit]
+On October 3, 2002, PayPal became a wholly owned subsidiary of eBay.[64] Its corporate headquarters are in San Jose, California,[65] United States at eBay's North First Street satellite office campus. The company also has significant operations in Omaha, Scottsdale, Charlotte, Austin, and Boston in the United States; Chennai in India; Dublin in Ireland; Kleinmachnow in Germany; and Tel Aviv in Israel. From July 2007, PayPal has operated across the European Union as a Luxembourg-based bank.[66]
+
+On September 30, 2014, eBay Inc. announced it would split into two independent public companies—eBay and PayPal—on July 20, 2015.[67]
+
+Use for data analysis[edit]
+As eBay is a huge, publicly visible market, it has attracted a great deal of interest from economists, who have used it to analyze many aspects of buying and selling behavior, auction formats, etc., and compare these with previous theoretical and empirical findings.
+
+Just as economists have shown interest in eBay's operations, computer information systems researchers have also shown interest in eBay. Recently Michael Goul, Chairman of the Computer Information Systems department of the W. P. Carey School of Business at Arizona State University, published an academic case based on eBay’s big data management and use. In the case, Goul discusses how eBay is a data-driven company which processes 50 petabytes of data a day.[68]
+
+eBay uses a system that allows different departments in the company to check out data from their data mart into sandboxes for analysis. According to Goul, eBay has already experienced significant business successes through its data analytics. To continue improving the business through data-driven decision making, eBay employs 5,000 data analysts.[68]
+
+Third party[edit]
+The accounting software company Intuit launched in 2006 a service called ItsDeductible which is a free web-based donation tracking service. With regard to eBay, the service uses data from the site to assist users in assigning a market value to the items they donate.[69]
+
+GCHQ[edit]
+UK's GCHQ has a suite of tools for monitoring target use of eBay, named ELATE.[70]
+
+ebay.com[edit]
+Items[edit]
+Millions of collectibles, decor, appliances, computers, furnishings, equipment, domain names,[71] vehicles, and other miscellaneous items are listed, bought, or sold daily on eBay. In 2006, eBay launched its Business & Industrial category, breaking into the industrial surplus business. Generally, anything can be auctioned on the site as long as it is not illegal and does not violate the eBay Prohibited and Restricted Items policy.[72] Services and intangibles can be sold, too. Large international companies, such as IBM, sell their newest products and offer services on eBay using competitive auctions and fixed-priced storefronts. Separate eBay sites such as eBay US and eBay UK allow the users to trade using the local currency. Software developers can create applications that integrate with eBay through the eBay API by joining the eBay Developers Program.[73] In June 2005, there were more than 15,000 members in the eBay Developers Program, comprising a broad range of companies creating software applications to support eBay buyers and sellers as well as eBay Affiliates.
+
+Numerous government and police agencies [74] around the world now use eBay as well as traditional auctions to dispose of seized and confiscated goods
+
+Controversy has arisen over certain items put up for bid. For instance, in late 1999, a man offered one of his kidneys for auction on eBay, attempting to profit from the potentially lucrative (and, in the United States, illegal) market for transplantable human organs.[75] On other occasions, people and even entire towns have been listed, often as a joke or to garner free publicity.[citation needed] In general, the company removes auctions that violate its terms of service agreement.
+
+
+eBay North First Street satellite office campus (home to PayPal)
+Beginning in August 2007, eBay required listings in "Video Games" and "Health & Beauty" to accept its payment system PayPal and sellers could only accept PayPal for payments in the category "Video Games: Consoles".[76] Starting January 10, 2008, eBay said sellers can only accept PayPal as payment for the categories "Computing > Software", "Consumer Electronics > MP3 Players", "Wholesale & Job Lots > Mobile & Home Phones", and "Business, Office & Industrial > Industrial Supply / MRO".[77] eBay announced that starting in March 2008, eBay had added to this requirement that all sellers with fewer than 100 feedbacks must offer PayPal and no merchant account may be used as an alternative.[78][79] This is in addition to the requirement that all sellers from the United Kingdom have to offer PayPal.[80]
+
+Further, and as noted below, it was a requirement to offer PayPal on all listings in Australia and the UK. In response to concerns expressed by the Australian Competition and Consumer Commission, however, eBay has since removed the policy on the ebay.com.au website requiring sellers to offer PayPal as a payment option.[81]
+
+
+eBay Express logo
+
+eBay Office in Toronto
+On April 24, 2006, eBay opened its new eBay Express site, which was designed to work like a standard Internet shopping site for consumers with United States addresses.[82] It closed in 2008.[citation needed] Selected eBay items were mirrored on eBay Express, where buyers shopped using a shopping cart to purchase from multiple sellers. The UK version was launched to eBay members in mid-October 2006 but on January 29, 2008 eBay announced its intention to close the site.[83] The German version, eBay Express Germany,[84] was also opened in 2006 and closed in 2008.
+
+At the 2008 eBay Developer's Conference, eBay announced the Selling Manager Applications program (SM Apps).[85] The program allows approved developers to integrate their applications directly into the eBay.com interface.[86] The applications created by developers are available for subscription by eBay members who also subscribe to Selling Manager.
+
+eBay maintains a number of specialty sites including the discussion boards, groups, answer center, chat rooms, and reviews and guides. eBay's mobile offerings include SMS alerts, a WAP site, Java ME clients, and mobile applications for Windows Phone, Android OS and Apple iPhone.
+
+The initiative Choice in eCommerce was founded on May 8, 2013 by several online retailers in Berlin, Germany.[87][88][89][90][91][92][93][94][95] The cause was, in the view of the initiative, sales bans and online restrictions by individual manufacturers. The dealers felt cut off from their main sales channel and thus deprived them the opportunity to use online platforms like Amazon, eBay or Rakuten in a competitive market for the benefit of their customers.
+
+Unusual items[edit]
+Main article: Unusual eBay listings
+Many unusual items have been placed for sale on eBay, including at least two previously undiscovered species, including the Coelopleurus exquisitus sea urchin.[96][97]
+
+Prohibited or restricted items[edit]
+In its earliest days, eBay was nearly unregulated. However, as the site grew, it became necessary to restrict or forbid auctions for various items. Note that some of the restrictions relate to eBay.com (the U.S. site), while other restrictions apply to specific European sites (such as Nazi paraphernalia). Regional laws and regulations may apply to the seller or the buyer. Generally, if the sale or ownership of an item is regulated or prohibited by one or more states, eBay will not permit its listing. Among the hundred or so banned or restricted categories:
+
+Tobacco (tobacco-related items and collectibles are accepted.)[98]
+Alcohol (alcohol-related collectibles, including sealed containers, as well as some wine sales by licensed sellers are allowed, some sites such as ebay.com.au allow licensed liquor sales)[99] (eBay announced September 21, 2012, it will begin removing listings for beer and liquor from its site after a story was aired on ABC series 20/20.)[100]
+Drugs and drug paraphernalia[101]
+Items that "promote or glorify hatred, violence, racial, sexual, or religious intolerance, or promote organizations with such views." This includes Nazi paraphernalia[102] and items depicting the Confederate battle flag.[103]
+Bootleg recordings[104]
+Firearms and ammunition (as of January 1, 1999),[105] including any parts that could be used to assemble a firearm as well as (as of July 30, 2007) any firearm part that is required for the firing of a gun, including bullet slugs, brass casings and shells, slides, cylinders, magazines, firing pins, trigger assemblies, etc. Various types of knives are also forbidden.
+Police and emergency service vehicular warning equipment such as red or blue lights and sirens (antique or collectible items are exempt)
+Intentionally soiled underwear (see Panty fetishism) and dirty used clothing[106]
+Forged, illegal, stolen, or confidential documents, which include passports, social security cards, drivers licenses, voter registration cards, birth certificates, school documents, medical records, financial information, government license plates, or government classified information documents. Any item that is used to modify documents is also restricted.[107]
+Human body parts, organs, and remains (with an exception for skeletons and skulls for scientific study, provided they are not Native American in origin)[108]
+Live animals (with certain exceptions)[109]
+Certain copyrighted works or trademarked items[110]
+Lottery tickets, sweepstakes tickets, or any other gambling items.[111]
+Military hardware such as working weapons or explosives with the exception of demilitarized vehicles.
+Any object of Iranian, Cuban, or North Korean origin.
+Enriched uranium, plutonium, and other fissile material.
+Certain categories of sexually oriented material, which must be listed in the "Adult Only" category,[112] notwithstanding certain items prohibited:[112]
+Child pornography
+Materials deemed obscene, including bestiality, necrophilia, rape, coprophilia, and incest
+Used sex toys
+Services including any sexual activity
+Links to sites that contain prohibited items
+Adult products that are delivered digitally
+Virtual items from massively multiplayer online games, restrictions that vary by country[113][114]
+Ivory products[109]
+Knives, other than some cutlery, are prohibited in the UK following the criminal importation into the UK (by BBC Watchdog researchers) of several knives that were already illegal to own or import under existing UK legislation. The ban also includes empty leather knife scabbards if they are listed under the category of "knives" on one of the eBay sites[115]
+Fortune-telling and witchcraft-related services[116]
+Souls, ghosts, and other "items whose existence cannot be verified" are prohibited.[117][118][119]
+Many other items are either wholly prohibited or restricted in some manner.[120]
+Bidding[edit]
+Auction-style listings[edit]
+Bidding on eBay (old or new)'s auction-style listing is called proxy bidding and is essentially equivalent to a Vickrey auction (sealed-bid), with the following exceptions.
+
+The winning bidder pays the second-highest bid plus one bid increment amount (that is, some small predefined amount relative to the bid size), instead of simply the highest bid. However, since the bid increment amounts are relatively insignificant compared to the bid size, they are not considered from a strategic standpoint.[121]
+The highest bidder's bid is sealed, as in a Vickrey auction, but the current winning bid (second highest plus one increment) is displayed throughout the auction to allow price discovery.[122]
+Because eBay's auction-style listings are sealed-bid, it is usually to all bidders' advantage that bids are made only at the very end of the auction. Early bids will not always increase the bidder's chance of winning the auction, and will often raise the item's final price (winning bid) for the winner.
+eBay also allows the sellers to offer a "Buy it Now" price that will end the auction immediately. The Buy It Now price is available until someone bids on the item, or until the reserve price is met. When the Buy It Now option disappears, the auction-style listing proceeds normally.[123]
+Seller ratings[edit]
+In 2008, eBay began using detailed seller ratings with four different categories. When leaving feedback, buyers are asked to rate the seller in each of these categories with a score of one to five stars, with five being the highest rating and one, the lowest. Unlike the overall feedback rating, these ratings are anonymous; neither sellers nor other users learn how individual buyers rated the seller. The listings of sellers with a rating of 4.3 or below in any into the four rating categories appear lower in search results. Power Sellers are required to have scores in each category above 4.5.[124][125][126][127][128]
+
+In a reversal of roles, on January 24, 2010 Auctionbytes.com held an open survey in which sellers could effectively rate eBay itself, as well as competing auction and marketplace sites.[129] In the survey, users were asked to rank 15 sites based on five criteria:
+
+Profitability
+Customer Service
+Communication
+Ease of Use
+Recommendation
+After the results were published, eBay had finished 13th overall,[130] edged out by established sites such as Amazon and Craigslist, as well as lesser-known selling sites like Atomic Mall, eCRATER, and Ruby Lane. In individual category rankings, eBay was rated the worst of all the 15 sites on Customer Service and Communication, and average on Ease of Use. A number of respondents said they would have given eBay a rating of ten 3 to 5 years ago. eBay was rated twelfth out of fifteen in the Recommended Selling Venue category.
+
+Charity auctions[edit]
+Using MissionFish as an arbiter, eBay allows sellers to donate a portion of their auction proceeds to a charity of the seller's choice. The program is called eBay Giving Works in the US, and eBay for Charity[131] in the UK. eBay provides a partial refund of seller fees for items sold through charity auctions.[132] As of March 4, 2010, $154 million has been raised for U.S. nonprofits by the eBay Community since eBay Giving Works began in 2003.[133]
+
+Some high-profile charity auctions have been advertised on the eBay home page.[134] As of June 2010, the highest successful bid on a single item for charity was for the annual "Power Lunch"[135] with investor Warren Buffett at the famous Smith & Wollensky Steakhouse in New York. The winning bid was $2.63 million with all of the proceeds going to the Glide Foundation. The winning bidder was not made public, but was able to bring up to seven friends to the lunch. In 2012, a higher bid, of $3.46 million, also going to the Glide Foundation, won a lunch with Buffet.[136]
+
+The previous highest successful bid on a single item for charity was for a letter[137] sent to Mark P. Mays, CEO of Clear Channel (parent company of Premiere Radio Networks the production company that produces The Rush Limbaugh Show and Glenn Beck Program) by Senator Harry Reid and forty other Democratic senators, complaining about comments made by conservative talk show host Rush Limbaugh. The winning bid was $2,100,100, with all of the proceeds going to the Marine Corps-Law Enforcement Foundation, benefiting the education of children of men and women who have died serving in the armed forces. The winning bid was matched by Limbaugh in his largest charity donation to date.[138]
+
+In 2007; eBay Canada partnered with Montreal-based digital branding agency CloudRaker to develop a campaign to raise money for Sainte-Justine children's hospital in Montreal. They aligned themselves with Internet phenomenon Têtes à claques to create an eBay auction based on popular T-A-C character Uncle Tom, an infomercial host who pitches absurd products. eBay and CloudRaker reproduced Uncle Tom's imaginary products, The Body Toner Fly Swatter, The Willi Waller Potato Peeler, and the LCD Shovel and sold them online. In six weeks, they raised $15,000 for Hôpital St-Justine with one fly swatter, one potato peeler, and one shovel, a world record. The Body Toner Fly Swatter sold for $8,600, the Willi Waller Potato Peeler sold for $3,550, and the LCD Shovel sold for $2,146.21.
+
+Shipping[edit]
+Before an auction, eBay lets sellers choose which shipping options to offer—regular mail, express mail, or courier service. The website lets buyers choose which option to accept.
+
+Since 2012, eBay has also allowed US sellers to opt into its Global Shipping Program. The program works as follows: Each seller decides whether or not to opt into the program. If a seller opts in, and a non-US buyer buys an item from the seller, then the buyer pays an additional fee to Pitney Bowes. The seller ships the item to a Pitney Bowes facility in the US. After receiving the item, Pitney Bowes forwards it to the buyer. The program enhances the selection available to buyers,[139] but can considerably increase buyers' costs on low-value items.
+
+Controversy and criticism[edit]
+Main article: Criticism of eBay
+eBay has its share of controversy, including cases of fraud, its policy of requiring sellers to use PayPal, and concerns over forgeries and intellectual property violations in auction items. There are also issues of how negative feedback after an auction can offset the benefits of using eBay as a trading platform. eBay has also been criticized for not paying its share of UK tax: the Sunday Times reported in October 2012 that eBay pays only £1.2m in tax on sales of over £800m.[140]
+
+2014 security breach[edit]
+On May 21, 2014 the company revealed that the consumer database of usernames, passwords, phone numbers, and physical addresses had been breached between late February and early March. Users were advised to change their passwords; in order to expedite this a "change password" feature was added to profiles of users who had not yet done so. The Syrian Electronic Army took responsibility for the attack. The SEA said that even though the hack revealed millions of user's banking details to them, they would not misuse the data. They had replaced the front pages of the websites with their own logo, called "Defacing" in technical terms. The hack put eBay's stock share in the market rapidly in down trend. The eBay stock value crashed through intra-day trade as a result of the breach of security.[141][142][143][144]
+
+See also[edit]
+Alibaba Group, Chinese e-commerce company
+Carousell (company)
+eBay v. Bidder's Edge
+Tiffany (NJ) Inc. v. eBay Inc.
+SF From Marin Highlands3.jpgSan Francisco Bay Area portal Factory 1b.svgCompanies portal Crystal Clear app browser.pngInternet portal Emblem-money.svgBusiness and Economics portal
+References[edit]
+^ Jump up to: a b c d e "eBay Inc. Financial Statement Results". US Securities and Exchange Commission. Retrieved February 11, 2014.
+Jump up ^ "Investor FAQ". Archived from the original on July 24, 2014.
+Jump up ^ Michael Galpin. "Eclipse at eBay, Part 1: Tailoring Eclipse to the eBay architecture". IBM developers work. Archived from the original on March 30, 2008. Retrieved March 11, 2008.
+Jump up ^ "Ebay.com Site Info". Alexa Internet. Retrieved August 14, 2015.
+Jump up ^ "Global Trade: 1. Finding International Items On eBay". ebay.com. Retrieved April 21, 2011. With sites in over 30 countries, eBay is the best place to find interesting and exotic items at discount prices from sellers around the World
+Jump up ^ Suciu, Peter (April 18, 2008). "Skype and PayPal – A Different Set of Rules". All Business. Retrieved April 23, 2008.
+Jump up ^ "Seller fees & invoices". eBay. Retrieved September 8, 2014.
+^ Jump up to: a b Cohen, Adam (2003). The Perfect Store. Boston: Back Bay Books. ISBN 0-316-16493-3.
+^ Jump up to: a b "How did eBay start?". about.com. Retrieved January 26, 2007.
+^ Jump up to: a b Scott Berkun (August 27, 2010). The Myths of Innovation. O'Reilly Media, Inc. p. 6. ISBN 978-1-4493-8962-8. Retrieved September 7, 2011.
+Jump up ^ page 36, The eBay Phenomenon by Elen Lewis publ2008 by Marshall Cavendish books
+Jump up ^ "Echobay Partners LTD". Echobay.com. Retrieved January 20, 2011.
+Jump up ^ Mullen, Amy. "The history of ebay". Happynews.com. Retrieved March 24, 2009.
+Jump up ^ Stross, Randall (December 29, 2009). eBoys: The First Inside Account of Venture Capitalists at Work. Ballantine Books (May 29, 2001). pp. 28–29. ISBN 978-0-345-42889-9.
+Jump up ^ Thomas, Owen (October 8, 2009). "eBay founder factchecks John McCain". Valleywag (Gawker Media). Retrieved March 4, 2009.
+Jump up ^ "eBay Inc. – MSN Fact Sheet". Moneycentral.hoovers.com. Retrieved March 24, 2009.
+Jump up ^ "eBay roars into public trading". CNET. CBS Interactive.
+Jump up ^ "It's Official: eBay Wed PayPal". CNET. 3 October 2002. Retrieved 4 October 2015.
+Jump up ^ "Meg Whitman to Step Down as President and CEO of eBay". eBay.com. January 23, 2008. Archived from the original on February 2, 2008.
+Jump up ^ "John Donahoe". Crunchbase.com. Retrieved November 1, 2011.
+Jump up ^ Wauters, Robin (November 19, 2009). "Breaking: eBay Completes Skype Sale At $2.75 Billion Valuation". The Washington Post. Retrieved November 1, 2011.
+Jump up ^ Bill Singer (November 19, 2012). "After Apple, Google, Adobe, Intel, Pixar, And Intuit, Antitrust Employment Charges Hit eBay". Forbes.
+Jump up ^ De La Merced, Michael; Sorkin, Andrew. "EBay to Spin Off PayPal, Adopting Strategy Backed by Icahn". The New York Times. Retrieved September 30, 2014.
+Jump up ^ Mukherjee, Supantha. "EBay follows Icahn's advice, plans PayPal spinoff in 2015". Reuters. Retrieved September 30, 2014.
+Jump up ^ Cheng, Roger. "eBay, PayPal to split into separate companies in 2015". CNET. Retrieved September 30, 2014.
+Jump up ^ "Board of Directors". eBay Inc. Retrieved November 4, 2014.
+Jump up ^ "Brand New: eBay Settles for Lowest Bid.". Brand New. Retrieved February 5, 2015.
+Jump up ^ "Auction-style listing fees". Standard selling fees. Retrieved November 18, 2012.
+Jump up ^ "Fixed price listing fees". Standard selling fees. Retrieved November 18, 2012.
+Jump up ^ "Contact Information". Pages.ebay.co.uk. Retrieved January 20, 2011.
+Jump up ^ "Ebay's history – know your roots!". Ecommerce Journal. Archived from the original on March 26, 2008. Retrieved February 25, 2010.
+Jump up ^ "eBay Guides – Tickets Buying Guide". Pages.ebay.ca. Retrieved February 25, 2010.
+Jump up ^ "eBay January 2008 announcement board. Posted on 30 January 2008 06:20 pm GMT". .ebay.com. Retrieved February 25, 2010.
+Jump up ^ "eBay Inc. – eBay Inc. Outlines Global Business Strategy". Investor.ebay.com. Retrieved February 25, 2010.
+Jump up ^ [IST] (April 24, 2009). "The brand that auctioned the www: eBay". Finance.indiainfo.com. Archived from the original on May 24, 2009. Retrieved February 25, 2010.[dead link]
+Jump up ^ "How Taobao bested Ebay in China". Financial Times. Retrieved November 3, 2013.
+Jump up ^ "Tom Online: eBay's Last China Card". Bloomberg BusinessWeek. Retrieved November 3, 2013.
+Jump up ^ "Q1 eBay earnings call April 16th 2008". Seekingalpha.com. Retrieved February 25, 2010.
+^ Jump up to: a b "Using escrow services for eBay Motors vehicle purchases". eBay Inc.
+Jump up ^ "Accepted Payments Policy". Pages.ebay.com. Retrieved March 24, 2009.
+Jump up ^ "eBay Bans Sellers from Offering PayPal Rivals". eCommerce Bytes. Retrieved 31 August 2015.
+Jump up ^ "eBay Partner Network". eBay Partner Network. Retrieved February 25, 2010.
+Jump up ^ "New Pricing to Launch on October 1st". eBay Inc.
+Jump up ^ Leena Rao. "eBay Beats; Q1 Revenue Up 29 Percent To $3.3B; Net Income Up 20 Percent". TechCrunch. AOL.
+^ Jump up to: a b "eBay Inc. Opens New "Green" Building and Unveils Largest Commercial Solar Installation in San Jose". Csrwire.com. Retrieved March 24, 2009.
+^ Jump up to: a b "EBay opens building with largest solar roof in San Jose". San Jose Mercury News. Origin.mercurynews.com. Retrieved February 25, 2010.
+^ Jump up to: a b "SolarCity Helps eBay Campus, Employees Switch to Clean Power With Largest Commercial Solar Installation in San Jose". Prnewswire.com. Retrieved March 24, 2009.
+Jump up ^ Giegerich, Andy. "Intel, eBay in forefront as Oregon tech companies join fight against climate change". Retrieved September 24, 2014.
+Jump up ^ "eBay To Acquire Online Tickets Marketplace StubHub" (Press release). eBay. January 10, 2007. Retrieved February 3, 2007.
+Jump up ^ Billboard. Nielsen Business Media, Inc. February 3, 2007. p. 18. ISSN 0006-2510. Retrieved April 30, 2013.
+Jump up ^ Shelly, Gary B.; Vermaat, Misty E. (2008). Discovering Computers 2009: Introductory. Cengage Learning. p. 103. ISBN 978-1-4239-1197-5. Retrieved April 30, 2013.
+^ Jump up to: a b "EBay Buying StubHub for $310M in Cash". Associated Press Online, accessed via HighBeam Research. January 11, 2011. Retrieved April 30, 2013.
+^ Jump up to: a b Fekete, Jeffrey (2010). Making the Big Game: Tales of an Accidental Spectator. Publish Green. p. 142. ISBN 978-1-936401-07-9. Retrieved April 30, 2013.
+Jump up ^ Billboard. Nielsen Business Media, Inc. May 5, 2007. p. 6. ISSN 0006-2510. Retrieved April 30, 2013.
+Jump up ^ Blau, John (2005-09-12). "EBay Buys Skype for $2.6 Billion | PCWorld". PCWorld. PCWorld. Retrieved 2015-09-21. Online auction site EBay has agreed to acquire Internet telephony company Skype Technologies for $2.6 billion, the companies have announced.
+Jump up ^ Wauters, Robin (2009-11-19). "Breaking: eBay Completes Skype Sale At $2.75 Billion Valuation | TechCrunch". TechCrunch. TechCrunch. Retrieved 2015-09-21. eBay has just announced that it has completed the sale of Skype, valuing the company at $2.75 billion.
+Jump up ^ Peter Bright (10 May 2011). "Microsoft Buy Skype for $8.5 Billion. Why, Exactly?". Wired. Retrieved 2 October 2015.
+Jump up ^ "craigslist - about > press > ebay stake". craigslist.org.
+Jump up ^ "EBay sues Craigslist ad website". BBC. April 23, 2008. Retrieved May 8, 2008.
+Jump up ^ "Craigslist strikes back at eBay". BBC. May 13, 2008. Retrieved May 13, 2008.
+^ Jump up to: a b "EBay wins legal ruling against Craigslist". Market Watch. September 9, 2010. Retrieved September 23, 2010.
+Jump up ^ "eBay Gets Partial Win in Craigslist Poison Pill Lawsuit". Daily Finance. September 10, 2010. Retrieved September 23, 2010.
+Jump up ^ "Ruling Restores Ebay's Stake in Craigslist". The Street. September 9, 2010. Retrieved September 23, 2010.
+Jump up ^ Troy Wolverton (October 3, 2002). "It's official: eBay weds PayPal". CNet. Retrieved May 7, 2007.
+Jump up ^ Diana Samuels (October 29, 2012), "PayPal lays off 325 in effort to speed innovation", San Jose Business Journal, bizjournals.com, retrieved October 30, 2012
+Jump up ^ Juan Carlos Perez (15 May 2007). "PayPal Granted Banking License in Europe". InfoWorld. Retrieved 3 October 2015.
+Jump up ^ "EBay And PayPal Formally Split On July 20". ebay.com.
+^ Jump up to: a b "eBay Study: How to Build Trust and Improve the Shopping Experience". Knowwpcarey.com. May 8, 2012. Archived from the original on June 19, 2012. Retrieved June 24, 2012.
+Jump up ^ Elmblad, Shelley. "ItsDeductible Online Tracks Charitable Contributions All Year". About.com. Retrieved December 28, 2013.
+Jump up ^ "Hacking Online Polls and Other Ways British Spies Seek to Control the Internet". The Intercept.
+Jump up ^ "eBay domain name sellers: ipadtrilogy.com for sale £3,000,000?!". DoesWhat. April 8, 2011. Retrieved November 1, 2011.
+Jump up ^ "Prohibited and Restricted Items – Overview". eBay. Retrieved June 28, 2006.
+Jump up ^ "eBay Developers Program". eBay. Retrieved June 28, 2006.
+Jump up ^ "government Auctions". Police and Government Auctions. Retrieved April 7, 2015.
+Jump up ^ Harmon, Amy. (September 3, 1999). "Auction for a kidney pops up on Ebay's site". New York Times. nytimes.com. Retrieved October 7, 2014.
+Jump up ^ "August 10, 2007, 10:38 am BST post to eBay announcement board by eBay's staff". .ebay.com. August 10, 2007. Retrieved February 25, 2010.
+Jump up ^ "21 December 2007 12:10 pm GMT General announcement by eBay". .ebay.com. Retrieved February 25, 2010.
+Jump up ^ "Announcement posted in a section on eBay called Changes in 2008". Web.archive.org. February 15, 2008. Archived from the original on February 15, 2008. Retrieved November 1, 2011.
+Jump up ^ "eBay February 2008 announcement board posted on 28 February 2008 02:49 pm GMT". .ebay.com. Retrieved February 25, 2010.
+Jump up ^ "eBay announcement 24 March 2008 09:00 am GMT". .ebay.com. Retrieved February 25, 2010.
+Jump up ^ "ACCC welcomes changes to eBay payment policies" (Press release). Australian Competition and Consumer Commission. May 13, 2005. Retrieved October 21, 2012.
+Jump up ^ Juan Carlos Perez (24 April 2006). "eBay Previews New eBay Express". PCWorld. Retrieved 4 October 2015.
+Jump up ^ "January 2008". .ebay.com. Retrieved March 24, 2009.
+Jump up ^ "eBay – eine der größten deutschen Shopping-Websites". ebayexpress.de. Retrieved January 20, 2011.
+Jump up ^ "eBay Developer's Conference Highlights". .ebay.com. Archived from the original on April 3, 2008. Retrieved June 10, 2009.
+Jump up ^ "Selling Manager Applications". .ebay.com. Retrieved June 10, 2009.
+Jump up ^ "Tamebay : Blog : Petition for Choice in Ecommerce". tamebay.com.
+Jump up ^ "Choice in eCommerce". The newroomsonline blog.
+Jump up ^   Published by Jean-Marc Noel09. August 2013. "Online retailers prepare to fight the sales ban - Ecommerce News Blog". Trustedshops.co.uk. Retrieved May 21, 2014.
+Jump up ^ "eBay lobbies to ban sales restrictions | Toy World Magazine". Toyworldmag.co.uk. Archived from the original on February 21, 2014. Retrieved May 21, 2014.
+Jump up ^ "Choice in eCommerce Campaigns for Resale Rights". Web Retailer. September 6, 2013. Retrieved May 21, 2014.
+Jump up ^ "Choice in eCommerce Interview". Web Retailer. September 21, 2013. Retrieved May 21, 2014.
+Jump up ^ BILD, Online-Händler kämpfen gegen Hersteller-Boykott, July 16, 2013
+Jump up ^ eCommerce Magazin 7-2013, Online-Handel gründet Initiative gegen Verkauftsverbot, July 17, 2013
+Jump up ^ FOCUS Online (July 16, 2013). "Aufstand gegen Adidas und Co.: Online-Händler stemmen sich gegen Verkaufsverbote". FOCUS Online.
+Jump up ^ "BBC - Outriders: An Exquisite New Species found on Ebay". bbc.co.uk.
+Jump up ^ "Insect expert discovers new species on eBay". August 19, 2008. Retrieved August 19, 2008.
+Jump up ^ eBay. "Tobacco policy". Retrieved February 25, 2010.
+Jump up ^ eBay. "Alcohol policy". Retrieved December 25, 2010.
+Jump up ^ McNIFF and GOMSTYN, EAMON and ALICE. "eBay Begins Removing Alcohol Listings After '20/20' Report on Teen Buyer". ABC News. Retrieved September 22, 2012.
+Jump up ^ eBay. "Drugs and drug paraphernalia policy". Retrieved December 25, 2010.
+Jump up ^ eBay. "Offensive material policy". Retrieved December 25, 2010.
+Jump up ^ "eBay bans Confederate battle flag, other items bearing racist icon". Ars Technica. Retrieved June 23, 2015.
+Jump up ^ eBay. "Bootleg recordings policy". Retrieved December 25, 2010.
+Jump up ^ eBay. "Firearms, weapons, and knives policy". Retrieved December 25, 2010.
+Jump up ^ eBay. "Used clothing policy". Retrieved December 25, 2010.
+Jump up ^ eBay. "Government documents, IDs, and licenses policy". Retrieved February 25, 2010.
+Jump up ^ eBay. "Human remains and body parts policy". Retrieved December 25, 2010.
+^ Jump up to: a b eBay. "Animals and wildlife products policy". Retrieved December 25, 2010.
+Jump up ^ eBay. "Rules about intellectual property – overview". Retrieved December 25, 2010.
+Jump up ^ eBay. "Slot machines policy". Retrieved December 25, 2010.
+^ Jump up to: a b eBay. "Adult Only category policy". Retrieved December 25, 2010.
+Jump up ^ "Digitally delivered goods policy". Retrieved December 25, 2010.
+Jump up ^ Anderson, Nate (January 30, 2007). "eBay bans the auction of in-game items". Ars Technica. Retrieved December 25, 2010.
+Jump up ^ "eBay bans trade in knives in UK". BBC News. February 9, 2008. Retrieved February 17, 2009.
+Jump up ^ BBC (August 20, 2012). "tarot readings and spells". BBC News. Retrieved August 22, 2012.
+Jump up ^ "No item listings and inappropriate comments policy". Retrieved January 24, 2013.
+Jump up ^ Hole, Chris work=Evening Gazette (September 18, 2010). "Norton DJ's charity ghost sale spirited off eBay". Retrieved January 24, 2013.
+Jump up ^ Thomas, Owen (July 6, 2012). "Turns Out You're Not Allowed To Sell Your Soul On eBay". Business Insider. Retrieved January 24, 2013.
+Jump up ^ eBay. "Prohibited and restricted items – overview". Retrieved December 25, 2010.
+Jump up ^ "eBay's explanation of bid increments". Pages.ebay.com. Retrieved February 25, 2010.
+Jump up ^ "Domain Name Auctions". AUCX.com.
+Jump up ^ "Selling using a fixed price". ebay.com.
+Jump up ^ "February 2008". .ebay.com. Retrieved March 24, 2009.
+Jump up ^ "January 2008". .ebay.com. Retrieved March 24, 2009.
+Jump up ^ "Upcoming Changes to Feedback". Pages.ebay.com. Retrieved March 24, 2009.
+Jump up ^ "Fees 2008 Overview". Pages.ebay.com. Retrieved March 24, 2009.
+Jump up ^ "January 2008". .ebay.com. Retrieved March 24, 2009.
+Jump up ^ Ina Steiner (January 24, 2010). "Seller's Choice: Merchants Rate Ecommerce Marketplaces". Auctionbytes.com. Retrieved June 27, 2010.
+Jump up ^ Ina Steiner (January 24, 2010). "Seller's Choice Marketplace Ratings: eBay". Auctionbytes.com. Retrieved June 27, 2010.
+Jump up ^ "eBay for Charity". Pages.ebay.co.uk. Retrieved February 25, 2010.
+Jump up ^ "eBay Giving Works fee credits". Pages.ebay.com. Retrieved February 25, 2010.
+Jump up ^ "Welcome to eBay Giving Works". Ebaygivingworks.com. Archived from the original on October 30, 2011. Retrieved November 1, 2011.
+Jump up ^ 2008 Jeffrey Carpenter, Jessica Holmes and Peter Hans Matthews Charity Auctions: A field of Experiment, The Economic Journal, Vol118 p92-93, Royal Economic Society, London- Blackwell Publishing January 2008.
+Jump up ^ "UPDATE 1-Warren Buffett lunch sells for $2.63 mln on eBay". Reuters. June 11, 2010. Retrieved June 17, 2010.
+Jump up ^ "Cost to lunch with Warren Buffett: $3.5 million". AP. June 9, 2012. Retrieved July 29, 2014.
+Jump up ^ "eBay Update: High Bidder on Reid Letter Will Own Historic Document". Rushlimbaugh.com. October 16, 2007. Retrieved March 24, 2009.
+Jump up ^ Strom, Stephanie (October 20, 2007). "Critical Letter to Limbaugh Fetches $2 Million". The New York Times. Retrieved May 1, 2010.
+Jump up ^ pjcdn2005 (February 8, 2013). "Re: eBay Global shipping program". eBay Seller Central subforum. Post 13. Retrieved May 1, 2013.
+Jump up ^ "EBay 'pays £1.2m in UK tax' on sales of £800m". BBC News. October 21, 2012. Retrieved January 4, 2014.
+Jump up ^ "EBay customers must reset passwords after major hack". CNN Money. Retrieved May 21, 2014.
+Jump up ^ "EBay urging users to change passwords after breach". USA Today. May 21, 2014. Retrieved May 21, 2014.
+Jump up ^ "EBay asks 145 million users to change passwords after cyber attack". Reuters. May 21, 2014. Retrieved May 21, 2014.
+Jump up ^ "eBay Suffers Massive Security Breach, All Users Must Change Their Passwords". Forbes. May 21, 2014. Retrieved May 21, 2014.
+External links[edit]
+	Wikimedia Commons has media related to eBay.
+Official website
+Business data for eBay Inc: 4ae2741ca4493172.html Hoover's Reuters SEC filings
+[show] v t e
+Companies of the NASDAQ-100 index
+[show] v t e
+Companies owned by eBay
+[show] v t e
+Major information technology companies
+[show] v t e
+Open Handset Alliance
+Authority control	
+GND: 10066658-9
+Categories: Companies in the NASDAQ-100 IndexEBay1995 establishments in the United StatesAmerican brandsCommerce websitesCompanies based in San Jose, CaliforniaCompanies established in 1995Internet companies of the United StatesInternet properties established in 1995IOS softwareWatchOS softwareAndroid (operating system) softwareWindows softwareWindows Phone softwareMultinational companies headquartered in the United StatesNational Medal of Technology recipientsOnline auction websitesOnline retail companies of the United StatesPublicly traded companies of the United StatesVirtual communitiesWebby Award winners
+Navigation menu
+Create accountNot logged inTalkContributionsLog inArticleTalkReadEditView history
+
+Search
+Go
+Main page
+Contents
+Featured content
+Current events
+Random article
+Donate to Wikipedia
+Wikipedia store
+Interaction
+Help
+About Wikipedia
+Community portal
+Recent changes
+Contact page
+Tools
+What links here
+Related changes
+Upload file
+Special pages
+Permanent link
+Page information
+Wikidata item
+Cite this page
+Print/export
+Create a book
+Download as PDF
+Printable version
+Languages
+Afrikaans
+العربية
+Azərbaycanca
+Беларуская
+Беларуская (тарашкевіца)‎
+Български
+Bosanski
+Català
+Čeština
+Dansk
+Deutsch
+Eesti
+Ελληνικά
+Español
+Esperanto
+فارسی
+Français
+Galego
+한국어
+Հայերեն
+हिन्दी
+Hrvatski
+Bahasa Indonesia
+Italiano
+עברית
+ქართული
+Қазақша
+Latina
+Latviešu
+Lietuvių
+Magyar
+മലയാളം
+Bahasa Melayu
+Nederlands
+नेपाली
+日本語
+Norsk bokmål
+Oʻzbekcha/ўзбекча
+ਪੰਜਾਬੀ
+Piemontèis
+Polski
+Português
+Română
+Русский
+Саха тыла
+Scots
+Shqip
+Simple English
+Slovenčina
+Slovenščina
+کوردیی ناوەندی
+Српски / srpski
+Srpskohrvatski / српскохрватски
+Suomi
+Svenska
+Tagalog
+தமிழ்
+ไทย
+Türkçe
+Українська
+Vèneto
+Tiếng Việt
+ייִדיש
+中文
+Edit links
+This page was last modified on 5 October 2015, at 04:55.
+Text is available under the Creative Commons Attribution-ShareAlike License; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.
+Privacy policyAbout WikipediaDisclaimersContact WikipediaDevelopersMobile viewWikimedia Foundation Powered by MediaWiki
