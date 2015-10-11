@@ -58,7 +58,8 @@ public abstract class Automata {
 	}
 	
 	public void reset(){
-		estado.setActual(false);
+		if(estado!=null)
+			estado.setActual(false);
 		estado = q0;
 		palabra="";
 		fin = false;
@@ -94,35 +95,39 @@ public abstract class Automata {
 		return cn;
 	}
 	
+	public void initUI(int w,int h){
+		frame = new JFrame();
+		p = new JPanel(){
+			public void paint(Graphics g){
+				g.clearRect(0, 0, getWidth(), getHeight());
+				Font f = g.getFont();
+				if(fin)
+					if(estado!=null&&estado.isFin())
+						g.setColor(Color.green);
+					else
+						g.setColor(Color.red);
+				g.setFont(new Font("Arial",Font.BOLD,50));
+				g.drawString(palabra, 20, 50);
+				g.setFont(f);
+				for(Condicion con:condiciones){
+					con.draw(g);
+				}
+				for(Nodo n:nodos){
+					n.paint(g);
+				}
+			}
+		};
+		frame.setSize(500, 500);
+		frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
+		frame.add(p);
+		frame.setSize(w,h);
+		frame.setVisible(true);
+	}
+	
 	public void procesar(char c, int w, int h){
 		
 		if(frame == null){
-			frame = new JFrame();
-			p = new JPanel(){
-				public void paint(Graphics g){
-					g.clearRect(0, 0, getWidth(), getHeight());
-					Font f = g.getFont();
-					if(fin)
-						if(estado!=null&&estado.isFin())
-							g.setColor(Color.green);
-						else
-							g.setColor(Color.red);
-					g.setFont(new Font("Arial",Font.BOLD,50));
-					g.drawString(palabra, 20, 50);
-					g.setFont(f);
-					for(Condicion con:condiciones){
-						con.draw(g);
-					}
-					for(Nodo n:nodos){
-						n.paint(g);
-					}
-				}
-			};
-			frame.setSize(500, 500);
-			frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
-			frame.add(p);
-			frame.setSize(w,h);
-			frame.setVisible(true);
+			initUI(w,h);
 		}
 		if(estado!=null){
 			estado.setActual(true);

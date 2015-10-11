@@ -7,7 +7,6 @@ import java.util.ArrayList;
 
 public class AutomataParidad  extends Automata{
 	public AutomataParidad(){
-		//super(estados,transiciones,finales);
 		super(new Nodo(150,150,0));
 		addNodo(new Nodo(150,300,1));
 		addNodo(new Nodo(300,150,2));
