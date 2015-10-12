@@ -64,6 +64,7 @@ public class AutomataND extends Automata{
 		EntradaAutomata e = new EntradaAutomata("Automata no deterministico para detectar cadenas que terminan en 01",false);
 		
 		String palabra = "";
+		FilePrinter p = new FilePrinter("binarios_01.txt");
 		
 		for(String linea:e.lineas){
 			palabra = "";
@@ -76,9 +77,9 @@ public class AutomataND extends Automata{
 				else{
 					if(palabra.length()>0){
 						if(a.isFinalizado())
-							System.out.println("La cadena "+palabra+" termina en 01");
+							p.println("La cadena "+palabra+" termina en 01");
 						else
-							System.out.println("La cadena "+palabra+" NO termina en 01");
+							p.println("La cadena "+palabra+" NO termina en 01");
 					}
 					a.reset();
 					palabra="";
@@ -86,9 +87,9 @@ public class AutomataND extends Automata{
 			}
 			if(palabra.length()>0){
 				if(a.isFinalizado())
-					System.out.println("La cadena "+palabra+" termina en 01");
+					p.println("La cadena "+palabra+" termina en 01");
 				else
-					System.out.println("La cadena "+palabra+" NO termina en 01");
+					p.println("La cadena "+palabra+" NO termina en 01");
 			}
 		}
 		

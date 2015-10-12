@@ -20,6 +20,7 @@ public class AutomataParidad  extends Automata{
 		EntradaAutomata e = new EntradaAutomata("Cadenas binarias con cantidad de 0s y 1s par");
 
 		AutomataParidad a = new AutomataParidad();
+		FilePrinter p = new FilePrinter("binarios_paridad.txt");
 
 		int l = 1;
 		int posicion = 1;
@@ -37,7 +38,7 @@ public class AutomataParidad  extends Automata{
 				}
 				else{
 					if(palabra.length()>0&&a.isFinalizado()){
-						System.out.println("\""+palabra+"\" en linea "+l+" posición "+(posicion-palabra.length()));
+						p.println("\""+palabra+"\" en linea "+l+" posición "+(posicion-palabra.length()));
 					}
 					a.finalizar();
 					a.reset();
@@ -46,13 +47,13 @@ public class AutomataParidad  extends Automata{
 				posicion++;
 			}
 			if(palabra.length()>0&&a.isFinalizado()){
-				System.out.println("\""+palabra+"\" en linea "+l+" posición "+(posicion-palabra.length()));
+				p.println("\""+palabra+"\" en linea "+l+" posición "+(posicion-palabra.length()));
 			}
 			a.finalizar();
 			a.reset();
 			l++;
 		}
-		System.out.println("\n\nBúsqueda terminada");
+		p.println("\n\nBúsqueda terminada");
 		
 	}
 }

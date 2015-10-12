@@ -56,6 +56,7 @@ public class AutomataWEBAY extends Automata {
 	}
 	public static void main(String[] args) {
 		AutomataWEBAY a = new AutomataWEBAY();
+		FilePrinter p = new FilePrinter("webay.txt");
 		
 		EntradaAutomata e = new EntradaAutomata("Palabras que contienen web o ebay");
 		
@@ -87,10 +88,10 @@ public class AutomataWEBAY extends Automata {
 				}
 				else{
 					if(is_web){
-						System.out.println("\"web\" encontrada en\""+palabra+"\" en linea "+l+" posición "+(posicion-palabra.length()));
+						p.println("\"web\" encontrada en \""+palabra+"\" en linea "+l+" posición "+(posicion-palabra.length()));
 					}
 					if(is_ebay){
-						System.out.println("\"ebay\" encontrada en\""+palabra+"\" en linea "+l+" posición "+(posicion-palabra.length()));
+						p.println("\"ebay\" encontrada en \""+palabra+"\" en linea "+l+" posición "+(posicion-palabra.length()));
 					}
 					a.reset();
 					a.finalizar();
@@ -101,17 +102,17 @@ public class AutomataWEBAY extends Automata {
 				posicion++;
 			}
 			if(is_web){
-				System.out.println("\"web\" encontrada en\""+palabra+"\" en linea "+l+" posición "+(posicion-palabra.length()));
+				p.println("\"web\" encontrada en \""+palabra+"\" en linea "+l+" posición "+(posicion-palabra.length()));
 			}
 			if(is_ebay){
-				System.out.println("\"ebay\" encontrada en\""+palabra+"\" en linea "+l+" posición "+(posicion-palabra.length()));
+				p.println("\"ebay\" encontrada en \""+palabra+"\" en linea "+l+" posición "+(posicion-palabra.length()));
 			}
 			a.reset();
 			a.finalizar();
 			l++;
 		}
 		
-		System.out.println("\n\nBúsqueda terminada");
+		p.println("\n\nBúsqueda terminada");
 		
 	}
 }

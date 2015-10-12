@@ -23,6 +23,8 @@ public class AutomataIng extends Automata{
 		AutomataIng a = new AutomataIng();
 		EntradaAutomata e = new EntradaAutomata("Palabras que terminan con ing");
 		
+		FilePrinter p = new FilePrinter("palabras_ing.txt");
+		
 		int l = 1;
 		int posicion = 1;
 		String palabra ="";
@@ -39,7 +41,7 @@ public class AutomataIng extends Automata{
 				}
 				else{
 					if(palabra.length()>0&&a.isFinalizado()){
-						System.out.println("\""+palabra+"\" en linea "+l+" posición "+(posicion-palabra.length()));
+						p.println("\""+palabra+"\" en linea "+l+" posición "+(posicion-palabra.length()));
 					}
 					a.finalizar();
 					a.reset();
@@ -48,13 +50,13 @@ public class AutomataIng extends Automata{
 				posicion++;
 			}
 			if(palabra.length()>0&&a.isFinalizado()){
-				System.out.println("\""+palabra+"\" en linea "+l+" posición "+(posicion-palabra.length()));
+				p.println("\""+palabra+"\" en linea "+l+" posición "+(posicion-palabra.length()));
 			}
 			a.finalizar();
 			a.reset();
 			l++;
 		}
 
-		System.out.println("\n\nBúsqueda terminada");
+		p.println("\n\nBúsqueda terminada");
 	}
 }
