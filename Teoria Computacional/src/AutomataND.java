@@ -3,22 +3,44 @@ import java.util.ArrayList;
 public class AutomataND extends Automata{
 
 	String word;
-	Nodo [] estados = new Nodo[1];
+	Trayectoria[] trayectorias = new Trayectoria[1];
 	
 	public AutomataND(Nodo q0, int angulo) {
 		super(q0, angulo);
-		estados[0]=q0;
+		trayectorias[0] = new Trayectoria();
+		trayectorias[0].addNodo(q0);
+	}
+	
+	public void printTrayectorias(FilePrinter p){
+		p.println("Trayectorias posibles: ");
+		for(Trayectoria t:trayectorias){
+			for (int i = 0; i < t.size(); i++) {
+				Nodo n = t.get(i);
+				p.print("q"+n.estado);
+				if(i+1<t.size()){
+					p.print(" -> ");
+				}
+				else{
+					if(t.getEstado().isFin()){
+						p.print(" [Final]");
+					}
+				}
+				
+			}
+			p.println();
+		}
 	}
 
 	
 	public void reset(){
-		estados = new Nodo[1];
-		estados[0] = q0;
+		trayectorias = new Trayectoria[1];
+		trayectorias[0] = new Trayectoria();
+		trayectorias[0].addNodo(q0);
 	}
 	
 	public boolean isFinalizado(){
-		for(Nodo n:estados){
-			if(n.isFin()){
+		for(Trayectoria t:trayectorias){
+			if(t.getEstado().isFin()){
 				return true;
 			}
 		}
@@ -26,26 +48,62 @@ public class AutomataND extends Automata{
 	}
 
 	public void procesarND(char c){
-		ArrayList<Nodo> nodos = new ArrayList<>();
+		ArrayList<Trayectoria> trayectorias = new ArrayList<>();
 		word+=c;
 		try{
-			for(Nodo e:estados){
+			
+			for(Trayectoria t:this.trayectorias){
 				ArrayList<Nodo> tmp = new ArrayList<>();
-				for(Condicion con:condiciones){
-					Nodo n = con.procesar(e, c);
-					if(n!=null){
-						tmp.add(n);
+				if(!t.atascado){
+					for(Condicion con:condiciones){
+						if(con.n1==t.getEstado()){
+							Nodo n = con.procesar(t.getEstado(), c);
+							tmp.add(n);
+						}
 					}
 				}
-				for (Nodo nodo : tmp) {
-					if(!nodos.contains(nodo))
-						nodos.add(nodo);
+				for(Trayectoria tr:t.getTrayectorias(tmp.toArray(new Nodo[0]))){
+					trayectorias.add(tr);
 				}
 			}
 		}catch(Exception e){
 			e.printStackTrace();
 		}
-		estados = nodos.toArray(new Nodo[0]);
+		this.trayectorias = trayectorias.toArray(this.trayectorias);
+	}
+	
+	class Trayectoria extends ArrayList<Nodo>{
+		boolean atascado;
+		boolean procesado;
+		
+		public void addNodo(Nodo n){
+			if(n!=null&&!atascado){
+				super.add(n);
+			}
+			else{
+				atascado = true;
+			}
+		}
+		
+		public Nodo getEstado(){
+			return get(size()-1);
+		}
+		
+		public Trayectoria[] getTrayectorias(Nodo[] nodos){
+			ArrayList<Trayectoria> aux = new ArrayList<>();
+			aux.add(this);
+			if(!procesado){
+				for(Nodo n:nodos){
+					if(n!=null){
+					Trayectoria t = (Trayectoria) this.clone();
+					t.addNodo(n);
+					aux.add(t);
+					}
+				}
+				procesado = true;
+			}
+			return aux.toArray(new Trayectoria[0]);
+		}
 	}
 	
 	public static void main(String[] args) {
@@ -76,6 +134,7 @@ public class AutomataND extends Automata{
 				}
 				else{
 					if(palabra.length()>0){
+						a.printTrayectorias(p);
 						if(a.isFinalizado())
 							p.println("La cadena "+palabra+" termina en 01");
 						else
@@ -86,6 +145,7 @@ public class AutomataND extends Automata{
 				}
 			}
 			if(palabra.length()>0){
+				a.printTrayectorias(p);
 				if(a.isFinalizado())
 					p.println("La cadena "+palabra+" termina en 01");
 				else

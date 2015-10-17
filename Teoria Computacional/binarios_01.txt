@@ -1,0 +1,2 @@
+La cadena 00 NO termina en 01
+La cadena 01 termina en 01

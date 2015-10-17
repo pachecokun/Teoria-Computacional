@@ -10,7 +10,7 @@ public class EntradaAutomata {
 	String archivo = null;
 	ArrayList<String> lineas = new ArrayList<>();
 	
-	public EntradaAutomata(String desc,boolean askmodo){
+	public EntradaAutomata(String desc,boolean askmodo,boolean binario){
 		
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -69,8 +69,11 @@ public class EntradaAutomata {
 			}
 		}
 	}
-	
+
 	public EntradaAutomata(String desc){
-		this(desc,true);
+		this(desc,true,false);
+	}
+	public EntradaAutomata(String desc,boolean ask){
+		this(desc,ask,false);
 	}
 }

@@ -1,0 +1,5 @@
+"1001" en linea 1 posición 1
+"1010101010101010" en linea 4 posición 1
+
+
+Búsqueda terminada
