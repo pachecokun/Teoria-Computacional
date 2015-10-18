@@ -1,2 +1,8 @@
-La cadena 00 NO termina en 01
-La cadena 01 termina en 01
+Trayectorias posibles: 
+q0 -> q0 -> q0 -> q0 -> q0 -> q0 -> q0 -> q0 -> q0 -> q0 -> q0 -> q0
+q0 -> q0 -> q0 -> q0 -> q0 -> q0 -> q0 -> q0 -> q0 -> q0 -> q1 -> q2 [Final]
+q0 -> q0 -> q0 -> q0 -> q0 -> q0 -> q0 -> q1 -> q2 [Atascado]
+q0 -> q0 -> q0 -> q0 -> q0 -> q1 -> q2 [Atascado]
+q0 -> q0 -> q0 -> q1 -> q2 [Atascado]
+q0 -> q1 -> q2 [Atascado]
+La cadena 01010101101 termina en 01

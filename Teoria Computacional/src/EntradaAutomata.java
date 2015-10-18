@@ -36,8 +36,11 @@ public class EntradaAutomata {
 		System.out.println("\nMétodos de entrada:");
 		System.out.println("\n1.Consola");
 		System.out.println("2.Archivo\n");
+		if(binario){
+			System.out.println("3.Aleatorio\n");
+		}
 		
-		while(entrada<1||entrada>2){
+		while(entrada<1||entrada>(binario?3:2)){
 			System.out.print("Ingrese la opcion: ");
 			try {
 				entrada = (Integer.parseInt(br.readLine()));
@@ -53,7 +56,7 @@ public class EntradaAutomata {
 				e.printStackTrace();
 			}
 		}
-		else{
+		else if(entrada == 2){
 			System.out.println("El archivo debe estar en la carpeta: "+a.getClass().getResource("").getFile());
 			System.out.print("Ingrese el nombre del archivo :");
 			String archivo;
@@ -67,6 +70,14 @@ public class EntradaAutomata {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+		}
+		else{
+			String cadena = "";
+			int largo = (int)(Math.random()*20)+1;
+			for(int i = 0;i<largo;i++){
+				cadena+=(Math.random()>0.5)?0:1;
+			}
+			lineas.add(cadena);
 		}
 	}
 

@@ -21,7 +21,10 @@ public class AutomataND extends Automata{
 					p.print(" -> ");
 				}
 				else{
-					if(t.getEstado().isFin()){
+					if(t.atascado){
+						p.print(" [Atascado]");
+					}
+					else if(t.getEstado().isFin()&&!t.procesado){
 						p.print(" [Final]");
 					}
 				}
@@ -40,7 +43,7 @@ public class AutomataND extends Automata{
 	
 	public boolean isFinalizado(){
 		for(Trayectoria t:trayectorias){
-			if(t.getEstado().isFin()){
+			if(t.getEstado().isFin()&&!t.atascado&&!t.procesado){
 				return true;
 			}
 		}
@@ -58,7 +61,9 @@ public class AutomataND extends Automata{
 					for(Condicion con:condiciones){
 						if(con.n1==t.getEstado()){
 							Nodo n = con.procesar(t.getEstado(), c);
-							tmp.add(n);
+							if(n!=null){
+								tmp.add(n);
+							}
 						}
 					}
 				}
@@ -69,7 +74,7 @@ public class AutomataND extends Automata{
 		}catch(Exception e){
 			e.printStackTrace();
 		}
-		this.trayectorias = trayectorias.toArray(this.trayectorias);
+		this.trayectorias = trayectorias.toArray(new Trayectoria[0]);
 	}
 	
 	class Trayectoria extends ArrayList<Nodo>{
@@ -91,14 +96,17 @@ public class AutomataND extends Automata{
 		
 		public Trayectoria[] getTrayectorias(Nodo[] nodos){
 			ArrayList<Trayectoria> aux = new ArrayList<>();
-			aux.add(this);
-			if(!procesado){
+			if(nodos.length==0){
+				atascado = true;
+			}
+			if(atascado){
+				aux.add(this);
+			}
+			if(!procesado&&!atascado){
 				for(Nodo n:nodos){
-					if(n!=null){
 					Trayectoria t = (Trayectoria) this.clone();
 					t.addNodo(n);
 					aux.add(t);
-					}
 				}
 				procesado = true;
 			}
@@ -119,7 +127,7 @@ public class AutomataND extends Automata{
 		
 		a.initUI(400, 200);
 		
-		EntradaAutomata e = new EntradaAutomata("Automata no deterministico para detectar cadenas que terminan en 01",false);
+		EntradaAutomata e = new EntradaAutomata("Automata no deterministico para detectar cadenas que terminan en 01",false,true);
 		
 		String palabra = "";
 		FilePrinter p = new FilePrinter("binarios_01.txt");
@@ -152,7 +160,7 @@ public class AutomataND extends Automata{
 					p.println("La cadena "+palabra+" NO termina en 01");
 			}
 		}
-		
+		System.exit(0);
 	}
 	
 }
