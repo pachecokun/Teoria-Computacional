@@ -17,7 +17,7 @@ public class AutomataParidad  extends Automata{
 	
 	public static void main(String[] args) {
 		
-		EntradaAutomata e = new EntradaAutomata("Cadenas binarias con cantidad de 0s y 1s par");
+		EntradaAutomata e = new EntradaAutomata("Cadenas binarias con cantidad de 0s y 1s par",true,true);
 
 		AutomataParidad a = new AutomataParidad();
 		FilePrinter p = new FilePrinter("binarios_paridad.txt");

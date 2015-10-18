@@ -64,6 +64,20 @@ public abstract class Automata {
 		Condicion cn = null;
 		Nodo e0 = estado;
 		palabra+=c;
+		if(frame!=null){
+			if(estado!=null){
+				e0.setActual(true);
+				p.repaint();
+				try {
+					Thread.sleep(500);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				e0.setActual(false);
+			}
+		}
+		
 		try{
 			boolean encontrado = false;
 			for(Condicion con:condiciones){
@@ -83,17 +97,6 @@ public abstract class Automata {
 		}
 		
 		if(frame!=null){
-			if(estado!=null){
-				e0.setActual(true);
-				p.repaint();
-				try {
-					Thread.sleep(500);
-				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-				e0.setActual(false);
-			}
 			if(cn!=null){
 				cn.setActual(true);
 				p.repaint();
