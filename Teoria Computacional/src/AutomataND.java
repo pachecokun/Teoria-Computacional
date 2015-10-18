@@ -131,7 +131,10 @@ public class AutomataND extends Automata{
 		
 		String palabra = "";
 		FilePrinter p = new FilePrinter("binarios_01.txt");
-		
+
+		if(e.entrada==3){
+			System.out.println("Cadena generada: "+e.lineas.get(0));
+		}
 		for(String linea:e.lineas){
 			palabra = "";
 			a.reset();

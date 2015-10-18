@@ -28,6 +28,9 @@ public class AutomataParidad  extends Automata{
 		if(e.modo==1){
 			a.initUI(500, 500);
 		}
+		if(e.entrada==3){
+			System.out.println("Cadena generada: "+e.lineas.get(0));
+		}
 		for(String linea:e.lineas){
 			posicion = 1;
 			palabra = "";
