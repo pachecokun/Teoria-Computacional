@@ -1,0 +1,6 @@
+"web" encontrada en "webweb" en linea 1 posición 1
+"web" encontrada en "webayy" en linea 1 posición 8
+"ebay" encontrada en "webayy" en linea 1 posición 8
+
+
+Búsqueda terminada
