@@ -39,7 +39,7 @@ public class AutomataPilaBin extends AutomataPila {
 				cadena = br.readLine();
 			}
 			else{
-				int largo = (int)(Math.random()*10001);
+				int largo = (int)(Math.random()*101);
 				for(int i = 0;i<largo;i++){
 					cadena += Math.random()>0.5?'0':'1';
 				}
@@ -50,24 +50,34 @@ public class AutomataPilaBin extends AutomataPila {
 			FilePrinter f = new FilePrinter("binariopila.txt");
 			f.println("Entrada: "+cadena);
 
+			int i = 0;
+			
 			for(char c:cadena.toCharArray()){
-				f.println("Estado: "+a.q+", tope:"+a.p.top()+", entrada: "+c);
+				if(i!=0)
+					f.print("|-");
+				//f.print("Estado: "+a.q+", tope:"+a.p.top()+", entrada: "+c);
+				f.print("("+a.q+","+cadena.substring(i++)+","+a.p.top()+")");
 				a.delta(c);
 				if(a.estado==-1){
+					f.println();
 					f.println("Cadena inválida");
 					return;
 				}
 				else if(a.estado == 1){
+					f.println();
 					f.println("Cadena válida");
 					return;
 				}
 			}
-			f.println("Estado: "+a.q+", tope:"+a.p.top()+", entrada: -");
+			//f.println("Estado: "+a.q+", tope:"+a.p.top()+", entrada: -");
+			f.print("("+a.q+","+cadena.substring(i++)+","+a.p.top()+")");
 			a.delta('-');
 			if(a.estado == 1){
+				f.println();
 				f.println("Cadena válida");
 				return;
 			}
+			f.println();
 			f.println("Cadena inválida");
 			return;
 			

@@ -76,8 +76,9 @@ public class Parentesis {
 			int entrada = 0;
 			
 			while(entrada<1||entrada>2){
-				System.out.print("Ingrese la opción: ");
 				try {
+					//Imprime ingrese la opcion deseada
+					System.out.print("Ingrese la opcion deseada: ");
 					entrada = (Integer.parseInt(br.readLine()));
 				} catch (Exception e) {} 
 			}

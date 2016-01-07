@@ -1,10 +1,14 @@
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+
 
 public class AutomataTablero extends AutomataND {
 
@@ -88,7 +92,7 @@ public class AutomataTablero extends AutomataND {
 		
 		JFrame frameT = new JFrame("Tablero");
 		frameT.setSize(460, 475);
-		frameT.add(tablero,"North");
+		frameT.add(tablero);
 		frameT.setResizable(false);
 		frameT.setLocationRelativeTo(null);
 		frameT.setVisible(true);
@@ -108,25 +112,78 @@ public class AutomataTablero extends AutomataND {
 				jugadas.add(t);
 			}
 		}
-		System.out.println(jugadas.size());
-		for(Trayectoria t:jugadas){
+		System.out.println("Cantidad de jugadas ganadoras: "+jugadas.size());
+		
+		if(jugadas.size()==0){
+			System.out.println("No hay jugadas ganadoras posibles.");
+			System.exit(0);
+		}
+		
+		FilePrinter f = new FilePrinter("jugadas.txt");
+		
+		int animar = (int)(Math.random()*jugadas.size());
+		
+		for(int  i = 0;i<jugadas.size();i++){
+			Trayectoria t = jugadas.get(i);
 			for(Nodo n:t){
-				posficha = n.estado;
-				tablero.repaint();
-				try {
-					Thread.sleep(1000);
-				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
+				f.print(n.estado+",");
+				if(i==animar){
+					posficha = n.estado;
+					tablero.repaint();
+					try {
+						Thread.sleep(1000);
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
 				}
 			}
+			f.println();
 		}
 		
 	}
 	
 	public static void main(String[] args) {
-		AutomataTablero a = new AutomataTablero();
-		a.procesarTrayectorias("brbrb");
+		
+		try{
+			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+			
+			System.out.println("\nMétodos de entrada:");
+			System.out.println("\n1.Consola");
+			System.out.println("2.Aleatorio\n");
+			
+			int entrada = 0;
+			
+			while(entrada<1||entrada>2){
+				System.out.print("Ingrese la opción: ");
+				try {
+					entrada = (Integer.parseInt(br.readLine()));
+				} catch (Exception e) {} 
+			}
+			
+			String cadena = "";
+			
+			if(entrada == 1){
+				System.out.print("Ingrese la cadena: ");
+				cadena = br.readLine();
+			}
+			else{
+				int largo = (int)(Math.random()*10);
+				for(int i = 0;i<largo;i++){
+					cadena += Math.random()>0.5?'r':'b';
+				}
+				System.out.println("Cadena generada: "+cadena);
+			}
+			
+			AutomataTablero a = new AutomataTablero();
+			a.procesarTrayectorias(cadena);
+			
+			
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+		
+		
 	}
 
 }
